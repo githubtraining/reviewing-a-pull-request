@@ -1,4 +1,4 @@
-Now that you have some experience _reviewing_ a pull request, it would be great if you tried your hand on _creating_ a pull request. 
+Now that you have some experience _reviewing_ a pull request, it would be great if you tried your hand _creating_ a pull request. 
 
 As the author of a pull request, it is your responsibility to:
 

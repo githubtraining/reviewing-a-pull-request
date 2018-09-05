@@ -15,7 +15,15 @@ Before reviewing this pull request, we should discuss how reviews work within Gi
 
 _to be a drop down_
 
-Formal vs Informal review requests
+<details><summary>Formal vs Informal review requests</summary>
+
+
+
+Coworkers might ask you in passing via Slack or in the hall if you could "take a look at" or "glance at" their PR. Although that person should probably use the review request feature, they are conventionally asking for the same thing. As long as you feel comfortable reviewing the content, it's ok to collaborate and help that person out with a review. In effect, you have their consent and request to participate in the review process.
+
+If you are in doubt about what type of code review your coworker is casually requesting, ask for clarification. You may also consider asking your coworker to formally request your review using the review request feature.
+
+</details>
 
 ### :keyboard: Activity: Review the pull request
 
