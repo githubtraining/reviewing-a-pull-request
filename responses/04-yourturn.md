@@ -10,3 +10,6 @@ As the author of a pull request, it is your responsibility to:
 - Testing the PR in review-lab
 - Responding to or acknowledging automated reviews
 
+### :keyboard: Activity: Make a change
+
+_modify the speed of the game instructions) 

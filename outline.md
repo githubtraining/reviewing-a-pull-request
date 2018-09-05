@@ -33,10 +33,13 @@ Storyline of Course:
 
 New hire within GitHub Engineering, first task is to modify a Tetris game to show off their personality
 
+
+
+
 Source of Truth: Order of activites
-Readme
-3090
-suggest
+Readme - approve a PR
+3090 - understand what to review at different stages of development
+suggest - how to provide feedback using the suggested changes function
 
 
 yourturn

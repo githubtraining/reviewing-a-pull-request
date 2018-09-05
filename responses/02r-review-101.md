@@ -1,3 +1,5 @@
 Thanks for **approving** my pull request! Normally, a pull request review won't be for something as simple as putting your awesome handle in a README file :smirk:. 
 
+As you continue through the course there are some important things to consider when reviewing and approving a pull request. Approving a pull request is a critical step in our development process and should be taken seriously. Approving a pull request assumes partial responsibility along with the pull request author that the code meets the criteria to be introduced into production. If you have any concerns about the pull request, withholding your approval is perfectly fine until all of your concerns have been satisfied. 
+
 Now that you know your way around a pull request, I would like you to review another change I made to the repository on this [pull request](link to new PR).

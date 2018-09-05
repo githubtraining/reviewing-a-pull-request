@@ -2,9 +2,11 @@ Wow {{ user.username }}, we covered a lot in this course! You are definitely a m
 
 _Use this as an area to include anything not covered in the course_
 
+xTerminology
+
 Before starting a review
 
-Review requests
+xReview requests
 
 
 Informal review requests
@@ -16,6 +18,8 @@ Role of the reviewer
 
 
 Reviewer vs. author responsibilities
+  - xReviewer responsibilities
+  - author responsibilities
 
 Either a reviewer or an author may:
 
@@ -52,7 +56,7 @@ Writing a review
 - Sentinel reviews
 - Summarizing your review
 
-Approving a Pull Request
+xApproving a Pull Request
 - Conditions for approval
 
 Requesting changes
