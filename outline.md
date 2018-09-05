@@ -29,3 +29,11 @@
    - Summarizing your review
 1. Approving a Pull Request
     
+
+Source of Truth: Order of activites
+Readme
+3090
+suggest
+
+
+yourturn
