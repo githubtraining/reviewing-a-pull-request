@@ -13,6 +13,10 @@ Before reviewing this pull request, we should discuss how reviews work within Gi
   - Send the author a message in Slack
   - Reject the review request
 
+_to be a drop down_
+
+Formal vs Informal review requests
+
 ### :keyboard: Activity: Review the pull request
 
 1. Click the **Files changed** tab
