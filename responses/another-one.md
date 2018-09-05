@@ -35,13 +35,13 @@ I've made some changes to this branch and would love :heart: it if you could `ap
 
 ### :keyboard: Activity: Approve a pull request
 
-   _steps to approve a pr_
+_steps to approve a pr_
 
 ## Approved pull request (success)
 
-    Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle::muscle-right:
+Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle::muscle-right:
 
-    [Link to next pr](link to next pr)
+[Link to next pr](link to next pr)
 
 # Using requires changes on a pull request
 
