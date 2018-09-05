@@ -28,7 +28,10 @@
    - Line level comments
    - Summarizing your review
 1. Approving a Pull Request
-    
+
+Storyline of Course:
+
+New hire within GitHub Engineering, first task is to modify a Tetris game to show off their personality
 
 Source of Truth: Order of activites
 Readme
