@@ -23,6 +23,23 @@ Comments are used early in the review process when an explicit approval or reque
 
 Not only can you ask questions or make suggestions to the proposed change via your sweet vocabulary, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). 
 
+<details><summary>Responsibilies of a reviewer</summary>
+
+As a pull request reviewer, your role is to help the pull request author:
+
+- Make sure that code destined for production is of the highest quality.
+- Make sure that we have commented on and confirmed any intentional shortcuts (techdebt) being taken in the code.
+- Make yourself aware of potential risks associated with their changes.
+
+As a reviewer, your responsibilities include:
+
+- Calling out any potential issues you spot with regards to code quality, security, or inaccuracies in business logic,
+- Suggesting other reviewers to the author if you feel they are warranted,
+Commenting on, approving, or requesting changes on the PR, and
+- Providing suggestions for alternate or better implementation details.
+
+</details>
+
 ### :keyboard: Activity: Add a comment to my pull request
    
 - User adds a line comment: PR has a change to `file` with `reviews reviews reviews` "accidentally" entered (i.e. Intro to pull request reviews reviews reviews)
@@ -31,7 +48,28 @@ Not only can you ask questions or make suggestions to the proposed change via yo
 
 Nice work @{{ user.username }}, by providing feedback on my pull request it enables me to make changes or reevaluate how I am making my desired change. Pull request reviews don't stop at commenting though, you can also `approve` or `request changes` on my pull request that will enable me (or prevent in the case of request changes) to merge my pull request!
 
+Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be a quick direct message to the author in Slack, leave a comment on the PR, leave a review, _or_ in some cases you may need to reject the review request altogether. 
+
 I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice, in a moment we will look at requesting changes :+1:.
+
+<details>
+<summary>Why would I reject a review request</summary>
+
+After discerning the context for the PR and observing its stage of progress, you should consider whether you feel comfortable moving forward with a review.
+
+Consider these qualifiers:
+
+- Do you have relevant expertise with the programming languages in use?
+- Do you have enough context to provide accurate feedback or ask helpful questions regarding the business logic at hand?
+- Does this PR look pretty similar to the other PRs that your team has been asked to review lately?
+
+You might consider offering a partial review to the author for the areas that you do understand, and noting in your review that you didn't feel comfortable reviewing 100% of the content.
+
+And of course, if you can't obtain sufficient context or you don't have the expertise such that you feel comfortable providing the review, you must opt out of the review.
+
+You can leave a comment politely declining the review request, and/or surface the situation to your manager for guidance.
+
+</details>
 
 ### :keyboard: Activity: Approve a pull request
 
@@ -57,7 +95,7 @@ _instructions for using requires changes_ the broken code will be something easy
 
 ## Requires changes (success)
 
-Thanks for catching that bug :bug:. In my excitement to ship more stuff I must have made a type. I'm making a change to this branch to fix my mistake, once I've done that you can click **Approve changes**. 
+Thanks for catching that bug :bug:. In my excitement to ship more stuff I must have made a typo. I'm making a change to this branch to fix my mistake, once I've done that you can click **Approve changes**. 
 
 ### :keyboard: Accept my changes
 
