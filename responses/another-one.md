@@ -48,12 +48,12 @@ Commenting on, approving, or requesting changes on the PR, and
 
 Nice work @{{ user.username }}, by providing feedback on my pull request it enables me to make changes or reevaluate how I am making my desired change. Pull request reviews don't stop at commenting though, you can also `approve` or `request changes` on my pull request that will enable me (or prevent in the case of request changes) to merge my pull request!
 
-Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be a quick direct message to the author in Slack, leave a comment on the PR, leave a review, _or_ in some cases you may need to reject the review request altogether. 
+Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be a quick direct message to the author in Slack, leaving a comment on the PR, leaving a review, _or_ in some cases you may need to reject the review request altogether. 
 
 I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice, in a moment we will look at requesting changes :+1:.
 
 <details>
-<summary>Why would I reject a review request</summary>
+<summary><h4>Why would I reject a review request</h4></summary>
 
 After discerning the context for the PR and observing its stage of progress, you should consider whether you feel comfortable moving forward with a review.
 
