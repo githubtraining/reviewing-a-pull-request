@@ -53,7 +53,7 @@ Typically when you get asked to review something at GitHub, you should acknowled
 I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice, in a moment we will look at requesting changes :+1:.
 
 <details>
-<summary><h4>Why would I reject a review request</h4></summary>
+<summary>Why would I reject a review request</summary>
 
 After discerning the context for the PR and observing its stage of progress, you should consider whether you feel comfortable moving forward with a review.
 
@@ -78,6 +78,15 @@ _steps to approve a pr_
 ## Approved pull request (success)
 
 Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle::muscle-right:
+
+<details><summary>What repos require a peer review and approval in order to deploy?</summary>
+
+At GitHub, most of the repositories that you work in will require an approved peer review prior to deployment. Not only do these repositories require peer reviews, but they use automated tests to ensure the code being shipped :ship: is as amazing as you are! 
+
+Additionally, some repositories use the [CODEOWNERS](https://help.github.com/articles/about-codeowners/) feature in concert with the PR approval process. If approval is required from a code owner, the code owner has the final authority to approve the pull request. Although providing your approval on a pull request with CODEOWNERS enabled won't enable the PR to be merged, it does demonstrate additional _confidence_ in the change.
+
+</details>
+
 
 [Link to next pr](link to next pr)
 
