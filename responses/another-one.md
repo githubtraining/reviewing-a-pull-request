@@ -77,7 +77,7 @@ _steps to approve a pr_
 
 ## Approved pull request (success)
 
-Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle::muscle-right:
+Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle:
 
 <details><summary>What repos require a peer review and approval in order to deploy?</summary>
 
