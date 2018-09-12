@@ -121,3 +121,9 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 ### :keyboard: Activity: Request a reviewer
 
 _steps to request a reviewer / what changes to make for LL to work_
+
+# Graceful Exit
+
+- issue
+
+Nice work helping me with all of these pull requests! As you embark on your journey of making GitHub better everyday, you might want to keep this article in your [backpocket](https://githubber.com/article/crafts/engineering/how-to-review-a-pull-request#approving-a-pull-request) :jeans: it covers a lot of the stuff we covered in this course and provides some more tips and requirements for reviewing pull requests within GitHub. If you have any questions along the way, make sure to ask you team (or the team you are helping) to answer any questions :question: as they come up.
