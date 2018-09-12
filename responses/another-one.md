@@ -77,7 +77,7 @@ _steps to approve a pr_
 
 ## Approved pull request (success)
 
-Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle::muscle-right:
+Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle:
 
 <details><summary>What repos require a peer review and approval in order to deploy?</summary>
 
@@ -121,9 +121,12 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 ### :keyboard: Activity: Request a reviewer
 
 _steps to request a reviewer / what changes to make for LL to work_
+<<<<<<< HEAD
 
 # Graceful Exit
 
 - issue
 
 Nice work helping me with all of these pull requests! As you embark on your journey of making GitHub better everyday, you might want to keep this article in your [backpocket](https://githubber.com/article/crafts/engineering/how-to-review-a-pull-request#approving-a-pull-request) :jeans: it covers a lot of the stuff we covered in this course and provides some more tips and requirements for reviewing pull requests within GitHub. If you have any questions along the way, make sure to ask you team (or the team you are helping) to answer any questions :question: as they come up.
+=======
+>>>>>>> 7e6fea69e35d981010701a10a280e44e95f68836
