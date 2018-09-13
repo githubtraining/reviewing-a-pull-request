@@ -52,6 +52,20 @@ Typically when you get asked to review something at GitHub, you should acknowled
 
 I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice, in a moment we will look at requesting changes :+1:.
 
+<details><summary>Before you review some things to consider</summary>
+
+#### Discern the context
+
+Reviewing the title and body of the PR, should help you understand the intended change and the reasoning behind the change. This clarification _should_ help you identify limitations, boundaries, and other things that could prevent the PR from being merged in its current state. 
+
+#### Observing the progress
+
+Depending on the state of the PR when you are brought in as a reviewer will help you identify how to best provide feedback to the author. An early stage PR or "30%" PR should be reviewed for the general direction of the changes. Identifying if the PR's goal is feasible or if the architecture can handle the change is more important than nitpicking the style, polish, or wording of the change. However, a "90%" PR is almost finalized, so checking for consistent style, that it is free of error messages, and exceptional cases are handled or at least tracked is vital at this stage. 
+
+Regardless of the stage of the PR, it is important to prioritize your feedback on the most essential changes, suggest changes for minor issues, and open a seperate PR against the author's branch when suggesting major changes.
+
+</details>
+
 <details>
 <summary>Why would I reject a review request</summary>
 
@@ -98,6 +112,33 @@ Sometimes when you are reviewing a pull request, the author might identify that 
 
 If you could check out this code for me and tell me what is wrong, that would be fantastic! 
 
+<details><summary>Writing a review</summary>
+
+#### Review the diff
+
+When reviewing the diff, read it critically and think about it in connection with other parts of the system. Try to anticipate unintended consequences (exceptions, performance problems, security vulnerabilities, etc.) this change could cause.
+
+If the diff adds more code than you can comprehend in a single reading, suggest that the author break the PR up into smaller chunks that can be reviewed more easily or try to find a way to accomplish the same goal with less code.
+
+#### Try it out
+
+For most things, actually trying out the proposed change is a good idea. This makes it a lot easier to tell if the actual change matches the intention.
+
+Here are some ways you could try the implementation:
+
+- Clone the branch and run the application in your local development environment.
+- Deploy the PR to a review-lab or staging environment (as appropriate).
+
+When summarizing your review, consider letting the author know whether or not you tried out the implementation.
+
+
+#### Empathy =/= Avoiding Constructive Feedback
+
+The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. Pull requests are a great learning experience for both the author and the reveiwer, by avoiding constructive feedback, you are limiting the potential of your team.
+
+</details>
+
+
 ### :keyboard: Activity: Using requires changes
 
 _instructions for using requires changes_ the broken code will be something easy to spot , alternatively, we can have them enable github pages and be able to use the preview pages option to identify the issue
@@ -121,12 +162,9 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 ### :keyboard: Activity: Request a reviewer
 
 _steps to request a reviewer / what changes to make for LL to work_
-<<<<<<< HEAD
 
 # Graceful Exit
 
 - issue
 
 Nice work helping me with all of these pull requests! As you embark on your journey of making GitHub better everyday, you might want to keep this article in your [backpocket](https://githubber.com/article/crafts/engineering/how-to-review-a-pull-request#approving-a-pull-request) :jeans: it covers a lot of the stuff we covered in this course and provides some more tips and requirements for reviewing pull requests within GitHub. If you have any questions along the way, make sure to ask you team (or the team you are helping) to answer any questions :question: as they come up.
-=======
->>>>>>> 7e6fea69e35d981010701a10a280e44e95f68836
