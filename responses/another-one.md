@@ -92,7 +92,7 @@ You can leave a comment politely declining the review request, or surface the si
 1. Above the changed code, click **Review changes**.
 1. Type a comment summarizing your feedback on the proposed changes.
 1. Select **Approve** to approve merging the changes proposed in the pull request.
-1. Click **Submit review**. 
+1. Click **Submit review**.
 
 ## Approved pull request (success)
 
@@ -148,6 +148,15 @@ The goal of providing feedback on a pull request is to ensure that the best poss
 
 _instructions for using requires changes_ the broken code will be something easy to spot , alternatively, we can have them enable GitHub pages and be able to use the preview pages option to identify the issue
 
+1. On the pull request, click **Files changed**.
+1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.
+1. In the comment window, type your comment. When you're done, click **Start a review**. If you have already started a review, you can click **Add review comment**.
+  - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
+1. Above the changed code, click **Review changes**.
+1. Type a comment summarizing your feedback on the proposed changes.
+1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
+1. Click **Submit review**.
+
 ## Requires changes (success)
 
 Thanks for catching that bug :bug:. In my excitement to ship more stuff, I must have made a typo. I'm making a change to this branch to fix my mistake. Once I've done that, please click **Approve changes**.
@@ -167,6 +176,9 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 ### :keyboard: Activity: Request a reviewer
 
 _steps to request a reviewer / what changes to make for LL to work_
+
+1. In the pull request, click **Request** in the right sidebar under **Reviewers**.
+1. Type the username of the person or the name of the team you're asking to review your changes, then click their team name or username to request a review.
 
 # Graceful Exit
 
