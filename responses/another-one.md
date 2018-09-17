@@ -87,7 +87,12 @@ You can leave a comment politely declining the review request, or surface the si
 
 ### :keyboard: Activity: Approve a pull request
 
-_steps to approve a pr_
+1. In the pull request, click the **Files changed** tab.
+1. Review the changes in the pull request by optionally commenting on specific lines.
+1. Above the changed code, click **Review changes**.
+1. Type a comment summarizing your feedback on the proposed changes.
+1. Select **Approve** to approve merging the changes proposed in the pull request.
+1. Click **Submit review**. 
 
 ## Approved pull request (success)
 
