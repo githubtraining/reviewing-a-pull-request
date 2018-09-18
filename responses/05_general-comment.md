@@ -1,6 +1,6 @@
 You just left an inline comment on my pull request. Typically when leaving review comments, it's important to include details, ask questions, and optimize your comment so the author can take action.
 
-Not all of the pull request reviews you perform in the future will decide the color of the blocks in our Tetris game :smile:. 
+Not all of the pull request reviews you perform in the future will decide the color of the blocks in our Tetris game :smile:.
 
 Although you may be tempted to leave shorthand comments like: :+1:, :poop:, `awesome!`, or `no`; these don't give the author of the PR much to run with. Providing comments like these enhance the conversation and enable the author of the PR to respond:
 
