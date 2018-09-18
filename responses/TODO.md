@@ -1,3 +1,8 @@
+Questions:
+- We open a pull request in step 2. What branch are we using? What changes are we introducing?
+- We open another pull request in step 4. Same question.
+- @beardofedu do we need the lower stuff? 
+
 @beardofedu, not sure what these other notes were from, but they're taken from `notes`, outline.md, and `finish.md`.
 
 1. First PR comment
