@@ -1,14 +1,9 @@
-# review-pull-request
-Repository for the Review a Pull Request course
+This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods.
 
-### Need to create for course
+In this course, you’ll learn how to:
 
-- [ ] Repo for the PRs
-  - probably github games
-- [ ] Instructions to enable github pages
-
-
-### Finish Activities
-
-- [ ] 03-SuggestChanges
-- [ ] 03r-SuggestChanges
+Comment on pull requests
+Leave reviews on pull requests
+Discern what is expected when reviewing pull requests
+Request pull request reviews
+Accept changes introduced by a pull request review
