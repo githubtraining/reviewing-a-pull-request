@@ -1,0 +1,111 @@
+version: 1
+title: Reviewing Pull Requests
+tagline: Start collaborating for GitHub, with GitHub.
+description: Learn how GitHub uses pull request reviews to communicate and collaborate during the development process.
+tags:
+  - GitHub
+  - Pull Requests
+template:
+  name: GitHub Games
+  url: http://github.com/githubtraining/github-games
+before:
+  - type: updateBranchProtection
+  - type: createIssue
+    title: Welcome
+    body: 01_intro.md
+steps:
+  - title: Assign Yourself
+    description: Assign yourself to the first issue in this repository
+    event: #TBD
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/issues/1
+    actions:
+      - type: gate
+        left: #checking if issue is assigned to user
+        operator: #
+        right: success
+      - type: #respond and close issue
+        issue: 1
+        with: 02_close-first-issue.md
+        data:
+          url: 'https://%user.username%.github.io/%payload.repository.name%'
+      - type: #open new PR, not sure which branch
+        with: 02_review-101.md
+
+  - title: Comment on a pull request
+    description: Comment on the pull request opened in your repository.
+    event: #tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
+    actions:
+      - type: gate
+        # make sure that user has commented, saying just about anything
+      - type: respond
+        issue: 2
+        with: 03_successful-comment.md
+        data:
+          url: # TBD 'https://%user.username%.github.io/%payload.repository.name%'
+
+  - title: Approve a pull request
+    description: Approve the pull request so that it can be merged.
+    event: #tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
+    actions:
+      - type: gate
+        # make sure they approved the pull request
+      - type: #merge pull request
+        with: 04_merging-pull-request.md
+      - type: #opens new pull request
+        with: 04_requiring-changes.md
+
+  - title: Requesting Changes
+    description: Leave a review that is requesting changes.
+    event: #tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
+    actions:
+      - type: #gate, make sure they actually respond with request for changes
+      # if they generally comment
+      - type: respond
+        with: 05_general-comment.md
+      # if they approve
+      - type: respond
+        with: 05_approval.md
+      # if they request changes
+      - type: respond
+        with: 05_changes-requested.md
+      - type: # change the branch in the pull request to reflect the requested changes
+
+
+  - title: Approve a pull request (again)
+    description: Approve the pull request that has been changed
+    event: # tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
+    actions:
+      - type: gate # check to make sure it's been approved
+      - type: # merge pull request
+      - type: respond
+        with: 06_thanks-for-approval.md
+      - type: # new issue
+        title: The Final Review
+        with: 06_final-flow.md
+
+  - title: Request a reviewer
+    description: Create a new pull request, and request that the Lab Bot reviews it.
+    event: # tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pulls
+    actions:
+      - type: # make sure user creates pull request, and has lab bot assigned as reviewer
+      - type: # approve pull request
+        with: 07_approve-pr.md
+      - type: # close last issue
+        with: 07_close-issue.md
+
+  - title: Merge pull request
+    description: Merge the pull request once I've approved it.
+    event: # tbd
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pulls
+    actions:
+      - type: # make sure pull request is merged
+      - type: respond # in pull request
+        with: 08_comment-final-pr.md
+      - type: # open new issue
+        title: You did it!
+        with: 08_final-issue.md
