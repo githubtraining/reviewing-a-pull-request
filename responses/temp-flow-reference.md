@@ -46,5 +46,5 @@
 
 ## 8
 
-- 🤖 Comment in pull request ()
+- 🤖 Comment in pull request (08_comment-final-pr.md)
 - 🤖 Open new issue (08_final-issue.md)

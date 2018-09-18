@@ -1,1 +1,1 @@
-Thanks for the approval. Next, head on over to [the next issue]().
+Thanks for the approval :+1:.  Next, head on over to [the next issue]().

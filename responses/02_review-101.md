@@ -1,14 +1,14 @@
 # Commenting on Pull Requests
 
-As a member of the engineering team, you will get and give pull request reviews before merging changes into production. This is important because it ensures the best quality code makes it to production and maintains the momentum of changes to our products.
+As a member of the engineering team, you will get and give pull request reviews before merging changes into production. This is important because it ensures quality code and maintains momentum of changes to our products.
 
-As you can see, I've opened this pull request and requested a review from you. Pull requests, unlike issues where project contributors _discuss_ a bug or new feature, are places to _share_ the changes being made to the repository.  I haven't done much yet, but would you mind taking a quick look and adding a line comment to the file?
+As you can see, I've opened this pull request and requested a review from you. Pull requests, unlike issues where project contributors _discuss_ a bug or new feature, are places to _share_ the changes being made to the repository.
 
-Comments are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions to the author, and generally help your team make awesome things.
+**Comments** are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions, and help your team create awesome features.
 
-Not only can you ask questions or make suggestions to the proposed change via your sweet vocabulary, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384).
+Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384).
 
-<details><summary>Responsibilities of a reviewer</summary>
+### Responsibilities of a reviewer
 
 As a pull request reviewer, your role is to help the pull request author by making sure:
 
@@ -22,8 +22,6 @@ As a reviewer, your responsibilities include:
 - Suggesting other reviewers to the author, when warranted
 - Commenting on, approving, or requesting changes on the PR
 - Providing suggestions for alternate or better implementation details
-
-</details>
 
 ### :keyboard: Activity: Add a comment to my pull request
 

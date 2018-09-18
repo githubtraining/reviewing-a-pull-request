@@ -1,6 +1,6 @@
 ## Reviewing Pull Requests
 
-Nice work @{{ user.username }}. By providing feedback on my pull request, you've enabled me to make changes or reevaluate how I am making my desired change. But, pull request reviews don't stop at commenting. You can also `approve` or `request changes` on my pull request to enable me to merge my pull request (Or, if you request changes, prevent me from merging until the pull request has had some work)!
+Nice work @{{ user.username }}. By providing feedback on my pull request, you've enabled me to make changes or reevaluate how I am making my desired change. But, pull request reviews don't stop at commenting. You can also `approve` or `request changes` on my pull request.
 
 Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be sending a quick direct message to the author in Slack, leaving a comment on the pull request, leaving a review, _or_ in some cases, rejecting the review request altogether.
 
@@ -10,7 +10,7 @@ I've made some changes to this branch and would love :heart: it if you could `ap
 
 #### Discern the context
 
-Reviewing the title and body of the PR should help you understand the intended change and the reasoning behind the change. This clarification _should_ help you identify limitations, boundaries, and other context that could prevent the pull request from being merged in its current state.
+Reviewing the title and body of the pull request should help you understand the intended change and the reasoning behind the change. This clarification _should_ help you identify limitations, boundaries, and other context that could prevent the pull request from being merged in its current state.
 
 #### Observing the progress
 
@@ -49,3 +49,8 @@ You can leave a comment politely declining the review request, or surface the si
 1. Type a comment summarizing your feedback on the proposed changes.
 1. Select **Approve** to approve merging the changes proposed in the pull request.
 1. Click **Submit review**.
+
+<hr>
+<h3 align="center">Return to this pull request for my next comment</h3>
+
+> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._

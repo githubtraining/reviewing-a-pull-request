@@ -2,11 +2,11 @@
 
 Thanks again for all your help on that last pull request. Since you are helping me out, I figured I would add some more changes to our project. With our powers combined, _anything_ is possible! This last change I made doesn't seem to be working, though. :grimacing:
 
-Sometimes when you are reviewing a pull request, the author might identify that some of the functionality isn't working and needs a helping hand :wave: to solve the problem. In other instances, it might "work on their machine" and they won't be aware that it doesn't work in other environments. When reviewing a pull request, not only is it important to look :eyes: at the code, but actually testing the code in a `dev` environment can help pinpoint any bugs that you don't catch by just looking at the code.
+Sometimes when you are reviewing a pull request, the author might identify that some of the functionality isn't working and needs a helping hand :wave: to solve the problem. In other instances, it might only work in their environment. When reviewing a pull request, it's important to both look at, and test the code to pinpoint any bugs or unexpected behavior.
 
 If you could check out this code for me and tell me what is wrong, that would be fantastic.
 
-<details><summary>Writing a review</summary>
+### Writing a review
 
 #### Review the diff
 
@@ -26,11 +26,9 @@ Here are some ways you could try the implementation:
 When summarizing your review, consider letting the author know whether or not you tried out the implementation.
 
 
-#### Empathy =/= Avoiding Constructive Feedback
+#### Empathy and Constructive Feedback
 
 The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. Pull requests are a great learning experience for both the author and the reviewer, and by avoiding constructive feedback, you are limiting the potential of your team.
-
-</details>
 
 
 ### :keyboard: Activity: Using requires changes
@@ -45,3 +43,8 @@ _instructions for using requires changes_ the broken code will be something easy
 1. Type a comment summarizing your feedback on the proposed changes.
 1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 1. Click **Submit review**.
+
+<hr>
+<h3 align="center">Return to this pull request for my next comment</h3>
+
+> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._

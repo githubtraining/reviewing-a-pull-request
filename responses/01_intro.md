@@ -1,6 +1,10 @@
-Hello and welcome to the GitHub Engineering team! Working on the GitHub Engineering team means you get to work on some _really_ awesome stuff, but, to ensure our best work is shipped :ship: we utilize peer reviews through GitHub Pull Request reviews. 
+## Welcome!
 
-This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods. 
+Hello and welcome to the GitHub Engineering team! Working on the GitHub Engineering team means you get to work on some _really_ awesome stuff, but, to ensure our best work is shipped :ship: we utilize peer reviews through GitHub Pull Request reviews.
+
+This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods.
+
+### Getting Started with Reviews
 
 Before we get started there are two terms I want to highlight, because they play a vital role in the pull request review process:
 
@@ -13,3 +17,7 @@ To continue in the course, I would like you to assign yourself to this issue. As
 
 1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section.
 
+<hr>
+<h3 align="center">Return to this issue for my next comment</h3>
+
+> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
