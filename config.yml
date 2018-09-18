@@ -71,14 +71,22 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
     actions:
       - type: gate
-        # TODO make sure they actually respond with request for changes
-        # TODO if they generally comment
+        left: '%payload.review.state'
+        operator: ===
+        right: REQUEST_CHANGES
+        else:
+        - type: gate
+          gates:
+            - left: '%payload.review.state'
+              operator: ===
+              right: COMMENT
         - type: respond
           with: 05_general-comment.md
-        # TODO if they approve
+            - left: '%payload.review.state'
+              operator: ===
+              right: APPROVE
         - type: respond
           with: 05_approval.md
-        # TODO if they request changes
         - type: respond
           with: 05_changes-requested.md
       - type: # TODO change the branch in the pull request to reflect the requested changes
