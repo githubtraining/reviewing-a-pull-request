@@ -1,6 +1,6 @@
 # Using `request changes` on a pull request
 
-Thanks again for all your help on that last pull request. Since you are helping me out, I figured I would add some more changes to our project. With our powers combined, _anything_ is possible! This last change I made doesn't seem to be working, though. :grimacing:
+Thanks again for all your help on that last pull request. Since you are helping me out, I figured I would add some more changes to our project. With our powers combined, _anything_ is possible! This last change might introduce some new changes that aren't really going to look great.
 
 Sometimes when you are reviewing a pull request, the author might identify that some of the functionality isn't working and needs a helping hand :wave: to solve the problem. In other instances, it might only work in their environment. When reviewing a pull request, it's important to both look at, and test the code to pinpoint any bugs or unexpected behavior.
 
@@ -41,6 +41,7 @@ _instructions for using requires changes_ the broken code will be something easy
   - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
 1. Above the changed code, click **Review changes**.
 1. Type a comment summarizing your feedback on the proposed changes.
+  - _Note: The problem here is that too many Tetris pieces are the same color. In your review, it would be good to suggest other colors that would be easier to see for people playing the game._
 1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 1. Click **Submit review**.
 

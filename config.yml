@@ -28,7 +28,7 @@ steps:
         with: 02_close-first-issue.md
         data:
           url: 'https://%user.username%.github.io/%payload.repository.name%'
-      - type: #open new PR, not sure which branch
+      - type: # open new PR from branch `game-instructions`
         with: 02_review-101.md
 
   - title: Comment on a pull request
@@ -53,7 +53,7 @@ steps:
         # make sure they approved the pull request
       - type: #merge pull request
         with: 04_merging-pull-request.md
-      - type: #opens new pull request
+      - type: #opens new pull request from branch `update-colors`
         with: 04_requiring-changes.md
 
   - title: Requesting Changes
@@ -72,7 +72,6 @@ steps:
       - type: respond
         with: 05_changes-requested.md
       - type: # change the branch in the pull request to reflect the requested changes
-
 
   - title: Approve a pull request (again)
     description: Approve the pull request that has been changed
