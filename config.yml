@@ -69,17 +69,17 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
     actions:
       - type: gate
-      # make sure they actually respond with request for changes
-        # if they generally comment
+        # TODO make sure they actually respond with request for changes
+        # TODO if they generally comment
         - type: respond
           with: 05_general-comment.md
-        # if they approve
+        # TODO if they approve
         - type: respond
           with: 05_approval.md
-        # if they request changes
+        # TODO if they request changes
         - type: respond
           with: 05_changes-requested.md
-      - type: # change the branch in the pull request to reflect the requested changes
+      - type: # TODO change the branch in the pull request to reflect the requested changes
 
   - title: Approve another pull request
     description: Approve the pull request that has been changed
