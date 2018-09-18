@@ -54,6 +54,9 @@ steps:
     actions:
       - type: gate
         # TODO make sure they approved the pull request
+        left: "%payload.review.state%"
+        operator: "==="
+        right: "approved" # TODO is this a real possibility?
       - type: mergeBranch
         head: game-instructions
       - type: respond
