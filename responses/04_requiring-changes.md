@@ -1,4 +1,4 @@
-# Using `requires changes` on a pull request
+# Using `request changes` on a pull request
 
 Thanks again for all your help on that last pull request. Since you are helping me out, I figured I would add some more changes to our project. With our powers combined, _anything_ is possible! This last change I made doesn't seem to be working, though. :grimacing:
 
