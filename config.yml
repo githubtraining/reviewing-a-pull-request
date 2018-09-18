@@ -53,10 +53,9 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
     actions:
       - type: gate
-        # TODO make sure they approved the pull request
-        left: "%payload.review.state%"
-        operator: "==="
-        right: "approved" # TODO is this a real possibility?
+        left: '%payload.review.state%'
+        operator: ===
+        right: APPROVED
       - type: mergeBranch
         head: game-instructions
       - type: respond
