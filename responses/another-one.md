@@ -17,7 +17,7 @@ Content inside said comment
 
 Hey there, I see you're new around here. As a member of the engineering team, you will get and give pull request reviews before merging changes into production. This is important because it ensures the best quality code makes it to production and maintains the momentum of changes to our products.
 
-As you can see, I've opened this pull request and requested a review from you. I haven't done much yet, but would you mind taking a quick look and adding comment?
+As you can see, I've opened this pull request and requested a review from you. I haven't done much yet, but would you mind taking a quick look and adding a line comment to the file?
 
 Comments are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions to the author, and generally help your team make awesome things.
 
@@ -46,7 +46,7 @@ As a reviewer, your responsibilities include:
 
 ## Commented on pull request (success)
 
-Nice work @{{ user.username }}. By providing feedback on my pull request, you've enabled me to make changes or reevaluate how I am making my desired change. But, pull request reviews don't stop at commenting. You can also `approve` or `request changes` on my pull request to enable me to merge my pull request! (Or, if you request changes, prevent me from merging until the pull request has had some work.)µ
+Nice work @{{ user.username }}. By providing feedback on my pull request, you've enabled me to make changes or reevaluate how I am making my desired change. But, pull request reviews don't stop at commenting. You can also `approve` or `request changes` on my pull request to enable me to merge my pull request (Or, if you request changes, prevent me from merging until the pull request has had some work)!
 
 Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be sending a quick direct message to the author in Slack, leaving a comment on the pull request, leaving a review, _or_ in some cases, rejecting the review request altogether.
 
@@ -60,7 +60,7 @@ Reviewing the title and body of the PR should help you understand the intended c
 
 #### Observing the progress
 
-As a reviewer, there are certain attributes to look for when identifying how to best provide feedback to the author of a pull request. For early stage pull request, or "30%" pull request, reviews should focus on the general direction of the changes. Identifying if the pull request's goal is feasible or if the architecture can handle the change is more important than nitpicking the style, polish, or wording of the change. However, a "90%" PR is almost finalized, so checking for consistent style, that it is free of error messages, and exceptional cases are handled or at least tracked is vital at this stage.
+As a reviewer, there are certain attributes to look for when identifying how to best provide feedback to the author of a pull request. For early stage pull requests, or "30%" pull requests, reviews should focus on the general direction of the changes. Identifying if the pull request's goal is feasible or if the architecture can handle the change is more important than nitpicking the style, polish, or wording of the change. However, a "90%" PR is almost finalized, so checking for consistent style, that it is free of error messages, and exceptional cases are handled or at least tracked is vital at this stage.
 
 Regardless of the stage of the pull request, it is important to prioritize your feedback on the most essential changes, suggest changes for minor issues, and open a separate pull request against the author's branch when suggesting major changes.
 
@@ -96,7 +96,7 @@ You can leave a comment politely declining the review request, or surface the si
 
 ## Approved pull request (success)
 
-Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made. With you helping me out, I seem to be able to tackle anything! :muscle:
+Thanks for approving my pull request! Now that my pull request is approved, I can merge it into our project. While I'm merging this in (I might have already :grinning:), why don't you head over to this new pull request I made? With you helping me out, I seem to be able to tackle anything! :muscle:
 
 <details><summary>What repositories require a peer review and approval in order to deploy?</summary>
 
@@ -146,7 +146,7 @@ The goal of providing feedback on a pull request is to ensure that the best poss
 
 ### :keyboard: Activity: Using requires changes
 
-_instructions for using requires changes_ the broken code will be something easy to spot , alternatively, we can have them enable GitHub pages and be able to use the preview pages option to identify the issue
+_instructions for using requires changes_ the broken code will be something easy to spot, alternatively, we can have them enable GitHub pages and be able to use the preview pages option to identify the issue
 
 1. On the pull request, click **Files changed**.
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.
