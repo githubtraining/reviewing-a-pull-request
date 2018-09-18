@@ -6,8 +6,8 @@ tags:
   - GitHub
   - Pull Requests
 template:
-  name: GitHub Games
-  url: http://github.com/githubtraining/github-games
+  name: Review Pull Requests Template
+  url: https://github.com/githubtraining/review-pull-requests-template
 before:
   - type: updateBranchProtection
   - type: createIssue
