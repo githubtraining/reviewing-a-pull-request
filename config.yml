@@ -20,16 +20,15 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/issues/1
     actions:
       - type: gate
-        left: #checking if issue is assigned to user
-        operator: #
-        right: success
-      - type: #respond and close issue
-        issue: 1
+        left: "%payload.assignee.login%"
+        operator: "==="
+        right: "%user.username%"
+      - type: respond
         with: 02_close-first-issue.md
-        data:
-          url: 'https://%user.username%.github.io/%payload.repository.name%'
-      - type: # open new PR from branch `game-instructions`
+      - type: createPullRequest
+        title: Update Game Instructions
         with: 02_review-101.md
+        head: game-instructions
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
@@ -53,8 +52,10 @@ steps:
         # make sure they approved the pull request
       - type: #merge pull request
         with: 04_merging-pull-request.md
-      - type: #opens new pull request from branch `update-colors`
+      - type: createPullRequest
+        title: Change Tetris Colors
         with: 04_requiring-changes.md
+        head: update-colors
 
   - title: Requesting Changes
     description: Leave a review that is requesting changes.
