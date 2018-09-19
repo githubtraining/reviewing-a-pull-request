@@ -19,12 +19,15 @@ steps:
         left: "%payload.assignee.login%"
         operator: "==="
         right: "%user.username%"
-      - type: respond
-        with: 02_close-first-issue.md
       - type: createPullRequest
         title: Update Game Instructions
         body: 02_review-101.md
         head: game-instructions
+        action_id: pr2
+      - type: respond
+        with: 02_close-first-issue.md
+        data:
+          url: '%actions.pr2.data.html_url%'
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
@@ -50,12 +53,15 @@ steps:
         right: 'approved'
       - type: mergeBranch
         head: game-instructions
-      - type: respond
-        with: 04_merging-pull-request.md
       - type: createPullRequest
         title: Change Tetris Colors
         body: 04_requiring-changes.md
         head: update-colors
+        action_id: pr3
+      - type: respond
+        with: 04_merging-pull-request.md
+        data:
+          url: '%actions.pr3.data.html_url%'
 
   - title: Requesting Changes
     description: Leave a review that is requesting changes.
@@ -95,14 +101,15 @@ steps:
         left: '%payload.review.state%'
         operator: ===
         right: 'approved'
-      - type: respond
-        with: 06_thanks-for-approval.md
       - type: mergePullRequest
       - type: createIssue
         title: The Final Review
         body: 06_final-flow.md
+        action_id: finalreview
+      - type: respond
+        with: 06_thanks-for-approval.md
         data:
-          url: 'https://%user.username%.github.io/%payload.repository.name%'
+          url: '%actions.finalreview.data.html_url%'
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
@@ -118,7 +125,6 @@ steps:
         issue: The Final Review
         with: 07_close-issue.md
         data:
-          # TODO check if URL below is correct
           url: '%actions.issue.data.html_url%'
 
   - title: Merge pull request
@@ -128,8 +134,11 @@ steps:
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
-      - type: respond
-        with: 08_comment-final-pr.md
       - type: createIssue
         title: You did it!
         body: 08_final-issue.md
+        action_id: finalIssue
+      - type: respond
+        with: 08_comment-final-pr.md
+        data:
+          url: '%actions.finalIssue.data.html_url%'
