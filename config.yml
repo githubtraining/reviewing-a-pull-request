@@ -23,7 +23,7 @@ steps:
         with: 02_close-first-issue.md
       - type: createPullRequest
         title: Update Game Instructions
-        with: 02_review-101.md
+        body: 02_review-101.md
         head: game-instructions
 
   - title: Comment on a pull request
