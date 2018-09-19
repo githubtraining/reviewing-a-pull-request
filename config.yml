@@ -109,13 +109,13 @@ steps:
       - type: createReview
         body: 07_approve-pr.md
         event: APPROVE
+      - type: closeIssue
+        issue: The Final Review
       - type: respond
         with: 07_close-issue.md
         data:
           # TODO check if URL below is correct
           url: '%actions.issue.data.html_url%'
-      - type: closeIssue
-        issue: The Final Review
 
   # - title: Merge pull request
   #   description: Merge the pull request once I've approved it.
