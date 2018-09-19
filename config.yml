@@ -63,7 +63,7 @@ steps:
       - type: gate
         left: '%payload.review.state'
         operator: ===
-        right: REQUEST_CHANGES
+        right: 'changes_requested'
         else:
         - type: gate
           gates:
