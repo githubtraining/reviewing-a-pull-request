@@ -45,7 +45,7 @@ steps:
       - type: gate
         left: '%payload.review.state%'
         operator: ===
-        right: APPROVED
+        right: 'approved'
       - type: mergeBranch
         head: game-instructions
       - type: respond
