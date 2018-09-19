@@ -41,7 +41,7 @@ _instructions for using requires changes_ the broken code will be something easy
   - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
 1. Above the changed code, click **Review changes**.
 1. Type a comment summarizing your feedback on the proposed changes.
-  - _Note: The problem here is that too many Tetris pieces are the same color. In your review, it would be good to suggest other colors that would be easier to see for people playing the game._
+  - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
 1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 1. Click **Submit review**.
 

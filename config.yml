@@ -30,8 +30,8 @@ steps:
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
-    event: issue_comment.created
-    link: https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
+    event: pull_request_review.submitted
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -83,6 +83,9 @@ steps:
               right: APPROVE
             - type: respond
               with: 05_approval.md
+      - type: mergeBranch
+        head: add-multiple-colors
+        base: update-colors
       - type: respond
         with: 05_changes-requested.md
   #     - type: # TODO change the branch in the pull request to reflect the requested changes
@@ -109,7 +112,7 @@ steps:
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.review_requested
+    event: pull_request.opened
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
