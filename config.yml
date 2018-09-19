@@ -82,7 +82,7 @@ steps:
         # TODO if they request changes
       - type: respond
         with: 05_changes-requested.md
-      - type: # TODO change the branch in the pull request to reflect the requested changes
+      # - type:  TODO change the branch in the pull request to reflect the requested changes
 
   - title: Approve another pull request
     description: Approve the pull request that has been changed
