@@ -21,6 +21,8 @@ steps:
         right: "%user.username%"
       - type: respond
         with: 02_close-first-issue.md
+        data:
+          url: '%actions.issue.data.html_url%'
       - type: createPullRequest
         title: Update Game Instructions
         body: 02_review-101.md
@@ -52,6 +54,8 @@ steps:
         head: game-instructions
       - type: respond
         with: 04_merging-pull-request.md
+        data:
+          url: '%actions.issue.data.html_url%'
       - type: createPullRequest
         title: Change Tetris Colors
         body: 04_requiring-changes.md
@@ -94,6 +98,8 @@ steps:
         right: 'approved'
       - type: respond
         with: 06_thanks-for-approval.md
+        data:
+          url: '%actions.issue.data.html_url%'
       - type: mergePullRequest
       - type: createIssue
         title: The Final Review
@@ -115,7 +121,6 @@ steps:
         issue: The Final Review
         with: 07_close-issue.md
         data:
-          # TODO check if URL below is correct
           url: '%actions.issue.data.html_url%'
 
   - title: Merge pull request
@@ -127,6 +132,8 @@ steps:
         left: '%payload.pull_request.merged%'
       - type: respond
         with: 08_comment-final-pr.md
+        data:
+          url: '%actions.issue.data.html_url%'
       - type: createIssue
         title: You did it!
         body: 08_final-issue.md
