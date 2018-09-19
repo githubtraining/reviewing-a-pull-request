@@ -101,16 +101,15 @@ steps:
         left: '%payload.review.state%'
         operator: ===
         right: 'approved'
-      - type: respond
-        with: 06_thanks-for-approval.md
-        data:
-          url: '%actions.issue.data.html_url%'
       - type: mergePullRequest
       - type: createIssue
         title: The Final Review
         body: 06_final-flow.md
+        action_id: finalreview
+      - type: respond
+        with: 06_thanks-for-approval.md
         data:
-          url: 'https://%user.username%.github.io/%payload.repository.name%'
+          url: '%actions.finalreview.data.html_url%'
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
