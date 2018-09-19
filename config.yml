@@ -32,7 +32,7 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
     actions:
       - type: gate
-        # TODO check this, make sure that user has commented, saying just about anything
+        # TODO check this, make sure that user has commented on the proper PR
         left: '%payload.comment.body%'
       - type: respond
         with: 03_successful-comment.md
