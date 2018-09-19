@@ -61,7 +61,7 @@ steps:
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
     actions:
       - type: gate
-        left: '%payload.review.state'
+        left: '%payload.review.state%'
         operator: ===
         right: 'changes_requested'
         else:
