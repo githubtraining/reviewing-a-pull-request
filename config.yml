@@ -103,14 +103,9 @@ steps:
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.review_requested
+    event: pull_request.opened
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
     actions:
-      - type: gate
-        # TODO check, make sure user creates pull request, and has lab bot assigned as reviewer
-        left: "%payload.pull_request.assignee.login%"
-        # operator: "==="
-        # right: "github-learning-lab"
       - type: createReview
         body: 07_approve-pr.md
         event: APPROVE
