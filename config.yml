@@ -112,6 +112,7 @@ steps:
       - type: closeIssue
         issue: The Final Review
       - type: respond
+        issue: The Final Review
         with: 07_close-issue.md
         data:
           # TODO check if URL below is correct
