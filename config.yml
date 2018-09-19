@@ -29,7 +29,7 @@ steps:
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
     event: pull_request_review.submitted
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -107,7 +107,7 @@ steps:
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
     event: pull_request.opened
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
         body: 07_approve-pr.md
