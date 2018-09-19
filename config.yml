@@ -39,11 +39,11 @@ steps:
           - left: '%payload.review.state%'
             operator: ===
             right: 'commented'
-          - left: '%payload.pull_request.title'
+          - left: '%payload.pull_request.title%'
             operator: ===
-            right: Update Game Instructions
-      - type: respond
-        with: 03_successful-comment.md
+            right: 'Update Game Instructions'
+          - type: respond
+            with: 03_successful-comment.md
 
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged.
