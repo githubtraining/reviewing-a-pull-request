@@ -23,7 +23,7 @@ steps:
   - title: Assign Yourself
     description: Assign yourself to the first issue in this repository
     event: issues.assigned
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/issues/1
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/issues/1
     actions:
       - type: gate
         left: "%payload.assignee.login%"
@@ -39,7 +39,7 @@ steps:
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
     event: issue_comment.created
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
+    link: https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         # TODO check this, make sure that user has commented, saying just about anything
@@ -50,7 +50,7 @@ steps:
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged.
     event: pull_request_review.submitted
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         # TODO make sure they approved the pull request
@@ -69,7 +69,7 @@ steps:
   - title: Requesting Changes
     description: Leave a review that is requesting changes.
     event: pull_request_review.submitted
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         # TODO make sure they actually respond with request for changes
@@ -87,7 +87,7 @@ steps:
   - title: Approve another pull request
     description: Approve the pull request that has been changed
     event: pull_request_review.submitted
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate # TODO check to make sure it's been approved
       - type: respond
@@ -102,7 +102,7 @@ steps:
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
     event: pull_request.review_requested
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: gate
         # TODO check, make sure user creates pull request, and has lab bot assigned as reviewer
@@ -121,7 +121,7 @@ steps:
   - title: Merge pull request
     description: Merge the pull request once I've approved it.
     event: pull_request.closed
-    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
