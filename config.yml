@@ -101,24 +101,26 @@ steps:
         data:
           url: 'https://%user.username%.github.io/%payload.repository.name%'
 
-  # - title: Request a reviewer
-  #   description: Create a new pull request, and request that the Lab Bot reviews it.
-  #   event: pull_request.review_requested
-  #   link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
-  #   actions:
-  #     - type: gate
-  #       # TODO check, make sure user creates pull request, and has lab bot assigned as reviewer
-  #       left: "%payload.assignee.login%"
-  #       operator: "==="
-  #       right: "github-learning-lab"
-  #     - type: createReview
-  #       body: 07_approve-pr.md
-  #       event: APPROVE
-  #     - type: closeIssue
-  #       with: 07_close-issue.md
-  #       data:
-  #         # TODO check if URL below is correct
-  #         url: '%actions.issue.data.html_url%'
+  - title: Request a reviewer
+    description: Create a new pull request, and request that the Lab Bot reviews it.
+    event: pull_request.review_requested
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
+    actions:
+      - type: gate
+        # TODO check, make sure user creates pull request, and has lab bot assigned as reviewer
+        left: "%payload.pull_request.assignee.login%"
+        # operator: "==="
+        # right: "github-learning-lab"
+      - type: createReview
+        body: 07_approve-pr.md
+        event: APPROVE
+      - type: respond
+        with: 07_close-issue.md
+        data:
+          # TODO check if URL below is correct
+          url: '%actions.issue.data.html_url%'
+      - type: closeIssue
+        issue: The Final Review
 
   # - title: Merge pull request
   #   description: Merge the pull request once I've approved it.
