@@ -28,12 +28,14 @@ steps:
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
-    event: issue_comment.created
+    event: pull_request_review.submitted
     link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/2
     actions:
       - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'commented'
         # TODO check this, make sure that user has commented on the proper PR
-        left: '%payload.comment.body%'
       - type: respond
         with: 03_successful-comment.md
 
