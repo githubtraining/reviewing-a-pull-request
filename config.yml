@@ -53,14 +53,15 @@ steps:
         right: 'approved'
       - type: mergeBranch
         head: game-instructions
-      - type: respond
-        with: 04_merging-pull-request.md
-        data:
-          url: '%actions.issue.data.html_url%'
       - type: createPullRequest
         title: Change Tetris Colors
         body: 04_requiring-changes.md
         head: update-colors
+        action_id: pr3
+      - type: respond
+        with: 04_merging-pull-request.md
+        data:
+          url: '%actions.pr3.data.html_url%'
 
   - title: Requesting Changes
     description: Leave a review that is requesting changes.
