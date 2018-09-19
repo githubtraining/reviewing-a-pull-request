@@ -95,7 +95,7 @@ steps:
       - type: mergePullRequest
       - type: createIssue
         title: The Final Review
-        with: 06_final-flow.md
+        body: 06_final-flow.md
         data:
           url: 'https://%user.username%.github.io/%payload.repository.name%'
 
@@ -129,4 +129,4 @@ steps:
         with: 08_comment-final-pr.md
       - type: createIssue
         title: You did it!
-        with: 08_final-issue.md
+        body: 08_final-issue.md
