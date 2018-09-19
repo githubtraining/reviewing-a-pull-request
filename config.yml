@@ -81,20 +81,23 @@ steps:
         with: 05_changes-requested.md
   #     - type: # TODO change the branch in the pull request to reflect the requested changes
 
-  # - title: Approve another pull request
-  #   description: Approve the pull request that has been changed
-  #   event: pull_request_review.submitted
-  #   link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
-  #   actions:
-  #     - type: gate # TODO check to make sure it's been approved
-  #     - type: respond
-  #       with: 06_thanks-for-approval.md
-  #     - type: mergePullRequest
-  #     - type: createIssue
-  #       title: The Final Review
-  #       with: 06_final-flow.md
-  #       data:
-  #         url: 'https://%user.username%.github.io/%payload.repository.name%'
+  - title: Approve another pull request
+    description: Approve the pull request that has been changed
+    event: pull_request_review.submitted
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/3
+    actions:
+      - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'approved'
+      - type: respond
+        with: 06_thanks-for-approval.md
+      - type: mergePullRequest
+      - type: createIssue
+        title: The Final Review
+        with: 06_final-flow.md
+        data:
+          url: 'https://%user.username%.github.io/%payload.repository.name%'
 
   # - title: Request a reviewer
   #   description: Create a new pull request, and request that the Lab Bot reviews it.
