@@ -74,14 +74,14 @@ steps:
       - type: gate
         # TODO make sure they actually respond with request for changes
         # TODO if they generally comment
-        - type: respond
-          with: 05_general-comment.md
+      - type: respond
+        with: 05_general-comment.md
         # TODO if they approve
-        - type: respond
-          with: 05_approval.md
+      - type: respond
+        with: 05_approval.md
         # TODO if they request changes
-        - type: respond
-          with: 05_changes-requested.md
+      - type: respond
+        with: 05_changes-requested.md
       - type: # TODO change the branch in the pull request to reflect the requested changes
 
   - title: Approve another pull request
