@@ -117,15 +117,15 @@ steps:
           # TODO check if URL below is correct
           url: '%actions.issue.data.html_url%'
 
-  # - title: Merge pull request
-  #   description: Merge the pull request once I've approved it.
-  #   event: pull_request.closed
-  #   link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
-  #   actions:
-  #     - type: gate
-  #       left: '%payload.pull_request.merged%'
-  #     - type: respond
-  #       with: 08_comment-final-pr.md
-  #     - type: createIssue
-  #       title: You did it!
-  #       with: 08_final-issue.md
+  - title: Merge pull request
+    description: Merge the pull request once I've approved it.
+    event: pull_request.closed
+    link: https://github.com/{{ user.username }}/{{ course.template.name }}/pull/5
+    actions:
+      - type: gate
+        left: '%payload.pull_request.merged%'
+      - type: respond
+        with: 08_comment-final-pr.md
+      - type: createIssue
+        title: You did it!
+        with: 08_final-issue.md
