@@ -19,14 +19,15 @@ steps:
         left: "%payload.assignee.login%"
         operator: "==="
         right: "%user.username%"
-      - type: respond
-        with: 02_close-first-issue.md
-        data:
-          url: '%actions.issue.data.html_url%'
       - type: createPullRequest
         title: Update Game Instructions
         body: 02_review-101.md
         head: game-instructions
+        action_id: pr2
+      - type: respond
+        with: 02_close-first-issue.md
+        data:
+          url: '%actions.pr2.data.html_url%'
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
