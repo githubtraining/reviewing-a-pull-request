@@ -79,6 +79,9 @@ steps:
               right: APPROVE
             - type: respond
               with: 05_approval.md
+      - type: merge
+        # TODO: will this merge directly into the branch of the PR? How can we change it ffrom merging into master? 
+        head: add-multiple-colors
       - type: respond
         with: 05_changes-requested.md
   #     - type: # TODO change the branch in the pull request to reflect the requested changes
