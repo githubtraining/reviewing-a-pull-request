@@ -1,21 +1,11 @@
-version: 1
 title: Reviewing Pull Requests
 tagline: Start collaborating for GitHub, with GitHub.
 description: Learn how GitHub uses pull request reviews to communicate and collaborate during the development process.
-tags: [
-  "GitHub", "Pull Requests"
-]
 template:
-  name: "reviewing-pull-requests"
-  url: "https://github.com/githubtraining/review-pull-requests-template"
+    name: reviewing-pull-requests
+    url: https://github.com/githubtraining/review-pull-requests-template.git
 before:
   - type: updateBranchProtection
-    branch: master
-    required_status_checks: null
-    enforce_admins: true
-    required_pull_request_reviews:
-      include_admins: true
-    restrictions: null
   - type: createIssue
     title: Welcome
     body: 01_intro.md
@@ -42,8 +32,10 @@ steps:
     link: https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
-        # TODO check this, make sure that user has commented, saying just about anything
-        left: '%payload.comment.body%'
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'commented'
+        # TODO check this, make sure that user has commented on the proper PR
       - type: respond
         with: 03_successful-comment.md
 
@@ -53,10 +45,9 @@ steps:
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
-        # TODO make sure they approved the pull request
-        left: "%payload.review.state%"
-        operator: "==="
-        right: "approved" # TODO is this a real possibility?
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'approved'
       - type: mergeBranch
         head: game-instructions
       - type: respond
@@ -72,24 +63,35 @@ steps:
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
-        # TODO make sure they actually respond with request for changes
-        # TODO if they generally comment
-      - type: respond
-        with: 05_general-comment.md
-        # TODO if they approve
-      - type: respond
-        with: 05_approval.md
-        # TODO if they request changes
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'changes_requested'
+        else:
+        - type: gate
+          gates:
+            - left: '%payload.review.state'
+              operator: ===
+              right: COMMENT
+            - type: respond
+              with: 05_general-comment.md
+            - left: '%payload.review.state'
+              operator: ===
+              right: APPROVE
+            - type: respond
+              with: 05_approval.md
       - type: respond
         with: 05_changes-requested.md
-      # - type:  TODO change the branch in the pull request to reflect the requested changes
+  #     - type: # TODO change the branch in the pull request to reflect the requested changes
 
   - title: Approve another pull request
     description: Approve the pull request that has been changed
     event: pull_request_review.submitted
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
-      - type: gate # TODO check to make sure it's been approved
+      - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'approved'
       - type: respond
         with: 06_thanks-for-approval.md
       - type: mergePullRequest
@@ -104,15 +106,13 @@ steps:
     event: pull_request.review_requested
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
-      - type: gate
-        # TODO check, make sure user creates pull request, and has lab bot assigned as reviewer
-        left: "%payload.assignee.login%"
-        operator: "==="
-        right: "github-learning-lab"
       - type: createReview
         body: 07_approve-pr.md
         event: APPROVE
       - type: closeIssue
+        issue: The Final Review
+      - type: respond
+        issue: The Final Review
         with: 07_close-issue.md
         data:
           # TODO check if URL below is correct
