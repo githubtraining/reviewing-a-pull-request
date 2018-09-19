@@ -52,7 +52,7 @@ steps:
         with: 04_merging-pull-request.md
       - type: createPullRequest
         title: Change Tetris Colors
-        with: 04_requiring-changes.md
+        body: 04_requiring-changes.md
         head: update-colors
 
   - title: Requesting Changes
