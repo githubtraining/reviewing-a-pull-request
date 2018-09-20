@@ -43,11 +43,11 @@ steps:
           - left: '%payload.pull_request.title%'
             operator: ===
             right: Update Game Instructions
-          - type: respond
-            with: 03_successful-comment.md
         else:
           - type: respond
             with: error.md
+      - type: respond
+        with: 03_successful-comment.md
 
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged.
