@@ -6,7 +6,7 @@ As you can see, I've opened this pull request and requested a review from you. P
 
 **Comments** are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions, and help your team create awesome features.
 
-Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). _Note: At the time of the team post, this feature will only be staff shipped, so only expect to see it on repositories in the `github` org._ 
+Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). _Note: At the time of the team post, this feature will only be staff shipped, so only expect to see it on repositories in the `github` org._
 
 ### Responsibilities of a reviewer
 
@@ -16,7 +16,7 @@ As a pull request reviewer, your role is to help the pull request author by maki
 - Any intentional shortcuts (technical debt) added to the code are properly commented on and confirmed
 - The greater team is aware of potential risks associated with changes
 
-As a reviewer, your responsibilities include:
+These broad responsibilities can include more specific goals, like:
 
 - Calling out any potential issues you spot with regards to code quality, security, or inaccuracies in business logic
 - Suggesting other reviewers to the author, when warranted
