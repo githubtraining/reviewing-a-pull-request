@@ -1,8 +1,8 @@
 # Requesting a reviewer
 
-Wow, I've been working _really_ hard on this project, but I haven't let you show off your sweet programming skills yet. I'd like you to make a change to our project to really make it your own :+1:. After you create your change and open a pull request, I would like to review it. The best way to get someone to review your pull request is to request for them to review it.
+Wow, I've been working _really_ hard on this project, but I haven't let you show off your sweet programming skills yet. I'd like you to make a change to our project to really make it your own.  :+1: After you create your change and open a pull request, I would like to review it. The best way to get someone to review your pull request is to request for them to review it.
 
-As your reviewer, I'm going to check to make sure your change doesn't break anything :construction:, but it is your job as the author of the pull request to tell me what you are trying to accomplish. By letting me know what you are trying to do in the initial comment of the pull request, I can start testing and reviewing immediately. This allows us to work asynchronously, so I can continue being a night-owl :owl: and you can enjoy being the early bird :bird:.
+As your reviewer, I'm going to check to make sure your change doesn't break anything :construction:, but it is your job as the author of the pull request to tell me what you are trying to accomplish. By letting me know what you are trying to do in the initial comment of the pull request, I can start testing and reviewing immediately. This allows us to work asynchronously, so I can continue being a night-owl and you can enjoy being the early bird. :owl: :bird:
 
 ### :keyboard: Activity: Request a reviewer
 

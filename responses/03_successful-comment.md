@@ -4,7 +4,7 @@ Nice work @{{ user.username }}. By providing feedback on my pull request, you've
 
 Typically when you get asked to review something at GitHub, you should acknowledge the request within 1 business day. Acknowledging a review request can be sending a quick direct message to the author in Slack, leaving a comment on the pull request, leaving a review, _or_ in some cases, rejecting the review request altogether.
 
-I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice. In a moment we will look at requesting changes :+1:.
+I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice. In a moment we will look at requesting changes. :+1:
 
 <details><summary>Before you review, some things to consider</summary>
 
