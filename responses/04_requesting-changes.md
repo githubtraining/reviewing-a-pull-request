@@ -8,9 +8,9 @@ If you could check out this code for me and tell me what is wrong, that would be
 
 ### Writing a review
 
-#### Review the diff
+#### Review the `diff`
 
-When reviewing the diff, read it critically and think about it in connection with other parts of the system. Try to anticipate unintended consequences (exceptions, performance problems, security vulnerabilities, etc.) this change could cause.
+When reviewing the `diff`, the presentation of the code which is being proposed to be merged, read it critically and think about it in connection with other parts of the system. Try to anticipate unintended consequences (exceptions, performance problems, security vulnerabilities, etc.) this change could cause.
 
 If the diff adds more code than you can comprehend in a single reading, suggest that the author break the pull request up into smaller chunks that can be reviewed more easily, or try to find a way to accomplish the same goal with less code.
 
@@ -31,9 +31,7 @@ When summarizing your review, consider letting the author know whether or not yo
 The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. Pull requests are a great learning experience for both the author and the reviewer, and by avoiding constructive feedback, you are limiting the potential of your team.
 
 
-### :keyboard: Activity: Using requires changes
-
-_instructions for using requires changes_ the broken code will be something easy to spot, alternatively, we can have them enable GitHub pages and be able to use the preview pages option to identify the issue
+### :keyboard: Activity: Requesting changes
 
 1. On the pull request, click **Files changed**.
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.

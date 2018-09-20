@@ -55,7 +55,7 @@ steps:
         head: game-instructions
       - type: createPullRequest
         title: Change Tetris Colors
-        body: 04_requiring-changes.md
+        body: 04_requesting-changes.md
         head: update-colors
         action_id: pr3
       - type: respond
