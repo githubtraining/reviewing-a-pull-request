@@ -13,7 +13,7 @@ steps:
   - title: Assign Yourself
     description: Assign yourself to the first issue in this repository
     event: issues.assigned
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/issues/1
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/issues/1
     actions:
       - type: gate
         left: "%payload.assignee.login%"
@@ -24,15 +24,19 @@ steps:
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
+      - type: requestReviewFromRegistrant
+        pullRequest: Update Game Instructions
       - type: respond
         with: 02_close-first-issue.md
         data:
           url: '%actions.pr2.data.html_url%'
+      - type: closeIssue
+        issue: Welcome
 
   - title: Comment on a pull request
-    description: Comment on the pull request opened in your repository.
+    description: Comment on the pull request opened in your repository
     event: pull_request_review.submitted
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         every: true
@@ -50,9 +54,9 @@ steps:
         with: 03_successful-comment.md
 
   - title: Approve a pull request
-    description: Approve the pull request so that it can be merged.
+    description: Approve the pull request so that it can be merged
     event: pull_request_review.submitted
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -62,7 +66,7 @@ steps:
         head: game-instructions
       - type: createPullRequest
         title: Change Tetris Colors
-        body: 04_requiring-changes.md
+        body: 04_requesting-changes.md
         head: update-colors
         action_id: pr3
       - type: respond
@@ -71,9 +75,9 @@ steps:
           url: '%actions.pr3.data.html_url%'
 
   - title: Requesting Changes
-    description: Leave a review that is requesting changes.
+    description: Leave a review that is requesting changes
     event: pull_request_review.submitted
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -101,7 +105,7 @@ steps:
   - title: Approve another pull request
     description: Approve the pull request that has been changed
     event: pull_request_review.submitted
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -118,9 +122,9 @@ steps:
           url: '%actions.finalreview.data.html_url%'
 
   - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.opened
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
+    description: Create a new pull request, and request that the Lab Bot reviews it
+    event: pull_request.review_requested
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
         body: 07_approve-pr.md
@@ -134,9 +138,9 @@ steps:
           url: '%actions.issue.data.html_url%'
 
   - title: Merge pull request
-    description: Merge the pull request once I've approved it.
+    description: Merge the pull request once I've approved it
     event: pull_request.closed
-    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
+    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'

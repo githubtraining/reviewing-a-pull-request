@@ -8,9 +8,9 @@ If you could check out this code for me and tell me what is wrong, that would be
 
 ### Writing a review
 
-#### Review the diff
+#### Review the `diff`
 
-When reviewing the diff, read it critically and think about it in connection with other parts of the system. Try to anticipate unintended consequences (exceptions, performance problems, security vulnerabilities, etc.) this change could cause.
+When reviewing the `diff`, the presentation of the code which is being proposed to be merged, read it critically and think about it in connection with other parts of the system. Try to anticipate unintended consequences (exceptions, performance problems, security vulnerabilities, etc.) this change could cause.
 
 If the diff adds more code than you can comprehend in a single reading, suggest that the author break the pull request up into smaller chunks that can be reviewed more easily, or try to find a way to accomplish the same goal with less code.
 
@@ -31,17 +31,15 @@ When summarizing your review, consider letting the author know whether or not yo
 The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. Pull requests are a great learning experience for both the author and the reviewer, and by avoiding constructive feedback, you are limiting the potential of your team.
 
 
-### :keyboard: Activity: Using requires changes
-
-_instructions for using requires changes_ the broken code will be something easy to spot, alternatively, we can have them enable GitHub pages and be able to use the preview pages option to identify the issue
+### :keyboard: Activity: Requesting changes
 
 1. On the pull request, click **Files changed**.
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.
 1. In the comment window, type your comment. When you're done, click **Start a review**. If you have already started a review, you can click **Add review comment**.
-  - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
+    - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
 1. Above the changed code, click **Review changes**.
 1. Type a comment summarizing your feedback on the proposed changes.
-  - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
+    - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
 1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 1. Click **Submit review**.
 
