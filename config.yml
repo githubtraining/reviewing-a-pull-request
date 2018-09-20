@@ -37,14 +37,17 @@ steps:
       - type: gate
         every: true
         gates:
-            - left: '%payload.review.state%'
-              operator: ===
-              right: 'commented'
-            - left: '%payload.pull_request.title%'
-              operator: ===
-              right: Update Game Instructions
+          - left: '%payload.review.state%'
+            operator: ===
+            right: 'commented'
+          - left: '%payload.pull_request.title%'
+            operator: ===
+            right: Update Game Instructions
           - type: respond
             with: 03_successful-comment.md
+        else:
+          - type: respond
+            with: error.md
 
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged.
