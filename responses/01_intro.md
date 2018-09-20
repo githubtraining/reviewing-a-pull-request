@@ -2,7 +2,7 @@
 
 Hello and welcome to the GitHub Engineering team! Working on the GitHub Engineering team means you get to work on some _really_ awesome stuff, but, to ensure our best work is shipped :ship: we utilize peer reviews through GitHub Pull Request reviews.
 
-This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods.
+This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods. To do this, we'll be playing around with the code in this repository that makes a simple Tetris game. To deploy this game on GitHub Pages and actually see our improvements in real time, go to the **Settings** tab of this repository, and scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**. GitHub will create a deployment for you on GitHub Pages.  
 
 ### Getting Started with Reviews
 
