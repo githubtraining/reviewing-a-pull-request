@@ -28,6 +28,8 @@ steps:
         with: 02_close-first-issue.md
         data:
           url: '%actions.pr2.data.html_url%'
+      - type: closeIssue
+        issue: Welcome
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
