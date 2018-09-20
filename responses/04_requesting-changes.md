@@ -36,10 +36,10 @@ The goal of providing feedback on a pull request is to ensure that the best poss
 1. On the pull request, click **Files changed**.
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.
 1. In the comment window, type your comment. When you're done, click **Start a review**. If you have already started a review, you can click **Add review comment**.
-  - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
+    - _Note: Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
 1. Above the changed code, click **Review changes**.
 1. Type a comment summarizing your feedback on the proposed changes.
-  - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
+    - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
 1. Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 1. Click **Submit review**.
 
