@@ -16,16 +16,16 @@ steps:
     link: https://github.com/githubschool/{{ registration.repositoryName }}/issues/1
     actions:
       - type: gate
-        left: "%payload.assignee.login%"
-        operator: "==="
-        right: "%user.username%"
+        left: '%payload.assignee.login%'
+        operator: ===
+        right: '%user.username%'
       - type: createPullRequest
         title: Update Game Instructions
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
       - type: requestReviewFromRegistrant
-        pullRequest: Update Game Instructions
+        pullRequest: 2
       - type: respond
         with: 02_close-first-issue.md
         data:
