@@ -11,7 +11,7 @@ Although you may be tempted to leave shorthand comments like: :+1:, :poop:, `awe
 
 While you were reading this, I made your suggested changes, so if you could approve my pull request, that would be awesome!
 
-### :keyboard: Activity: Approve (another) pull request
+### :keyboard: Activity: Give another pull request review
 
 1. In the pull request, click the **Files changed** tab.
 1. Review the changes in the pull request by optionally commenting on specific lines.
