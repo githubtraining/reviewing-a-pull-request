@@ -8,7 +8,7 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 
 1. Make a change of your choosing to your project and open a pull request.
 1. In the pull request, click **Request** in the right sidebar under **Reviewers**.
-1. Type the username of the person or the name of the team you're asking to review your changes, then click their team name or username to request a review.
+1. Type the username of the person or the name of the team you're asking to review your changes, then click their team name or username to request a review. If you don't know who to request, go ahead and assign `@githubteacher`. 
 
 <hr>
 <h3 align="center">Return to this issue for my next comment</h3>
