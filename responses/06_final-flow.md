@@ -7,7 +7,7 @@ As your reviewer, I'm going to check to make sure your change doesn't break anyt
 ### :keyboard: Activity: Request a reviewer
 
 1. Create a branch based on `master` in this repository. (You can do this locally, or from the GitHub UI. If you aren't sure how to do this, try the [Introduction to GitHub course](https://lab.github.com/githubtraining/introduction-to-github) and then come back to give it another try.
-1. While checked out to your branch, make a change of your choosing to your project.
+1. While checked out to your branch, make a change of your choosing to your project. Your change can be to the code in the `index.html` file, to the `README.md`, or anything else you'd like.
 1. Open a pull request.
 1. In the pull request, click **Request** in the right sidebar under **Reviewers**.
 1. Type the username of the person or the name of the team you're asking to review your changes, then click their team name or username to request a review. If you don't know who to request, go ahead and assign `@githubteacher`.
