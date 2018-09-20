@@ -24,6 +24,8 @@ steps:
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
+      - type: requestReviewFromRegistrant
+        pullRequest: Update Game Instructions
       - type: respond
         with: 02_close-first-issue.md
         data:
@@ -32,7 +34,7 @@ steps:
         issue: Welcome
 
   - title: Comment on a pull request
-    description: Comment on the pull request opened in your repository.
+    description: Comment on the pull request opened in your repository
     event: pull_request_review.submitted
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
     actions:
@@ -45,7 +47,7 @@ steps:
         with: 03_successful-comment.md
 
   - title: Approve a pull request
-    description: Approve the pull request so that it can be merged.
+    description: Approve the pull request so that it can be merged
     event: pull_request_review.submitted
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
     actions:
@@ -66,7 +68,7 @@ steps:
           url: '%actions.pr3.data.html_url%'
 
   - title: Requesting Changes
-    description: Leave a review that is requesting changes.
+    description: Leave a review that is requesting changes
     event: pull_request_review.submitted
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/3
     actions:
@@ -114,8 +116,8 @@ steps:
           url: '%actions.finalreview.data.html_url%'
 
   - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.opened
+    description: Create a new pull request, and request that the Lab Bot reviews it
+    event: pull_request.review_requested
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
@@ -130,7 +132,7 @@ steps:
           url: '%actions.issue.data.html_url%'
 
   - title: Merge pull request
-    description: Merge the pull request once I've approved it.
+    description: Merge the pull request once I've approved it
     event: pull_request.closed
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
     actions:

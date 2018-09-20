@@ -18,6 +18,6 @@ To continue in the course, I would like you to assign yourself to this issue. As
 1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section.
 
 <hr>
-<h3 align="center">Return to this issue for my next comment</h3>
+<h3 align="center">I'll respond below for your next step</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
