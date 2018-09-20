@@ -6,7 +6,7 @@ As you can see, I've opened this pull request and requested a review from you. P
 
 **Comments** are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions, and help your team create awesome features.
 
-Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384).
+Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). _Note: At the time of the team post, this feature will only be staff shipped, so only expect to see it on repositories in the `github` org._ 
 
 ### Responsibilities of a reviewer
 
