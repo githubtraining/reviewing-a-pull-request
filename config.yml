@@ -117,7 +117,7 @@ steps:
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it
-    event: pull_request.opened
+    event: pull_request.review_requested
     link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
