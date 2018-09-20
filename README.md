@@ -2,8 +2,8 @@ This course will dive into how you can get your best work done by identifying wh
 
 In this course, you’ll learn how to:
 
-Comment on pull requests
-Leave reviews on pull requests
-Discern what is expected when reviewing pull requests
-Request pull request reviews
-Accept changes introduced by a pull request review
+- Comment on pull requests
+- Leave reviews on pull requests
+- Discern what is expected when reviewing pull requests
+- Request pull request reviews
+- Accept changes introduced by a pull request review
