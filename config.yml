@@ -13,7 +13,7 @@ steps:
   - title: Assign Yourself
     description: Assign yourself to the first issue in this repository
     event: issues.assigned
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/issues/1
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/issues/1
     actions:
       - type: gate
         left: '%payload.assignee.login%'
@@ -36,7 +36,7 @@ steps:
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository
     event: pull_request_review.submitted
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         every: true
@@ -56,7 +56,7 @@ steps:
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged
     event: pull_request_review.submitted
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/2
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -77,7 +77,7 @@ steps:
   - title: Requesting Changes
     description: Leave a review that is requesting changes
     event: pull_request_review.submitted
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/3
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -105,7 +105,7 @@ steps:
   - title: Approve another pull request
     description: Approve the pull request that has been changed
     event: pull_request_review.submitted
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/3
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         left: '%payload.review.state%'
@@ -122,9 +122,9 @@ steps:
           url: '%actions.finalreview.data.html_url%'
 
   - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it
-    event: pull_request.review_requested
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
+    description: Create a new pull request, and request that the Lab Bot reviews it.
+    event: pull_request.opened
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: createReview
         body: 07_approve-pr.md
@@ -140,7 +140,7 @@ steps:
   - title: Merge pull request
     description: Merge the pull request once I've approved it
     event: pull_request.closed
-    link: https://github.com/githubschool/{{ registration.repositoryName }}/pull/5
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/5
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
