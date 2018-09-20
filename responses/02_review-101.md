@@ -6,7 +6,7 @@ As you can see, I've opened this pull request and requested a review from you. P
 
 **Comments** are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions, and help your team create awesome features.
 
-Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384).
+Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). _Note: At the time of the team post, this feature will only be staff shipped, so only expect to see it on repositories in the `github` org._ 
 
 ### Responsibilities of a reviewer
 
@@ -22,6 +22,12 @@ As a reviewer, your responsibilities include:
 - Suggesting other reviewers to the author, when warranted
 - Commenting on, approving, or requesting changes on the PR
 - Providing suggestions for alternate or better implementation details
+
+### What repositories require a peer review and approval in order to deploy?
+
+At GitHub, most of the repositories that you work in will require an approved peer review prior to deployment. Not only do these repositories require peer reviews, but they use automated tests to ensure the code being shipped :ship: is as amazing as you are. :sparkles:
+
+Additionally, some repositories use the [CODEOWNERS](https://help.github.com/articles/about-codeowners/) feature in concert with the pull request approval process. If approval is required from a code owner, the code owner has the final authority to approve the pull request. Although providing your approval on a pull request with `CODEOWNERS` enabled won't enable the pull request to be merged, it does demonstrate additional _confidence_ in the change.
 
 ### :keyboard: Activity: Add a comment to my pull request
 
