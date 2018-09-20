@@ -35,13 +35,14 @@ steps:
     link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
     actions:
       - type: gate
+        every: true
         gates:
-          - left: '%payload.review.state%'
-            operator: ===
-            right: 'commented'
-          - left: '%payload.pull_request.title%'
-            operator: ===
-            right: 'Update Game Instructions'
+            - left: '%payload.review.state%'
+              operator: ===
+              right: 'commented'
+            - left: '%payload.pull_request.title%'
+              operator: ===
+              right: Update Game Instructions
           - type: respond
             with: 03_successful-comment.md
 
