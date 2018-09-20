@@ -24,8 +24,8 @@ steps:
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
-      - type: requestReviewFromRegistrant
-        pullRequest: 2
+      # - type: requestReviewFromRegistrant
+      #   pullRequest: 2
       - type: respond
         with: 02_close-first-issue.md
         data:
