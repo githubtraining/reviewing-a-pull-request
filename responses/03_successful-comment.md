@@ -2,7 +2,7 @@
 
 Nice work @{{ user.username }}. By providing feedback on my pull request, you've enabled me to make changes or reevaluate how I am making my desired change. But, pull request reviews don't stop at commenting. You can also `approve` or `request changes` on my pull request.
 
-Typically when you get asked to review something by your team members, you should acknowledge the request. Acknowledging a review request can be leaving a comment on the pull request, leaving a review, _or_ in some cases, rejecting the review request altogether.
+Typically when you get asked to review something, you should acknowledge the request. Acknowledging a review request can be leaving a comment on the pull request, leaving a review, _or_ in some cases, rejecting the review request altogether.
 
 I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice. In a moment we will look at requesting changes. :+1:
 

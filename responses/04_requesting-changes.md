@@ -25,11 +25,9 @@ Here are some ways you could try the implementation:
 
 When summarizing your review, consider letting the author know whether or not you tried out the implementation.
 
-
 #### Empathy and Constructive Feedback
 
 The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. Pull requests are a great learning experience for both the author and the reviewer, and by avoiding constructive feedback, you are limiting the potential of your team.
-
 
 ### :keyboard: Activity: Requesting changes
 
