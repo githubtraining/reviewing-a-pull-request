@@ -2,7 +2,7 @@
 
 Hello and welcome! In this course you will learn how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods. To do this, we'll be playing around with the code in this repository that makes a simple Tetris game. 
 
-This repository is utilizing [GitHub Pages](https://pages.github.com/) to power the Tetris game, so as changes are merged you can see try them out :+1:. To learn more about GitHub Pages, try out the [GitHub Pages](https://lab.github.com/githubtraining/github-pages) course.
+To deploy this game on GitHub Pages and actually see our improvements in real time, go to the **Settings** tab of this repository, and scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**. GitHub will create a deployment for you on GitHub Pages.
 
 To continue in the course, I would like you to assign yourself to this issue. Assignees on issues and pull requests let other team members know who is responsible for making sure an issue or pull request is completed in an easily accessible and visual manner.
 
