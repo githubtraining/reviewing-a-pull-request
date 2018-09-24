@@ -1,4 +1,4 @@
-This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods.
+This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else's pull request, and other awesome collaboration methods.
 
 In this course, you’ll learn how to:
 
