@@ -1,4 +1,4 @@
-Thanks for making these changes to the project. Even though the person you requested a review from might not come around just yet, I think that this looks great, and these changes are ready to merge. :+1:
+Thanks for making these changes to the project. I think that this looks great, and these changes are ready to merge. :+1: If you requested a review from a friend, feel free to wait for them to approve your pull request, if not process with the activity below.
 
 ### :keyboard: Activity: Merge
 
