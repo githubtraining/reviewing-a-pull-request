@@ -1,4 +1,4 @@
-Collaboration is one of the most important things we do. Without it, things fall apart and confusion among those whom we interact with makes life difficult. Software development is no different. The key to creating great software, or any project, starts with collaboration. Pull request reviews give you the ability to collaborate and discuss changes specific to a pull request by commenting, requesting changes, or approving the pull request.
+Collaboration is one of the most important things we do. Without it, our lives would be full of frustration and confusion. Software development is no different. The key to creating great software, or any project, starts with collaboration. Pull request reviews give you the ability to collaborate and discuss changes specific to a pull request by commenting, requesting changes, or approving the pull request.
 
 This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else's pull request, and other awesome collaboration methods.
 
