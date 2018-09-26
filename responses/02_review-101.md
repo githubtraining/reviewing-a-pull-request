@@ -1,12 +1,10 @@
 # Commenting on Pull Requests
 
-As a member of an awesome team, you will get and give pull request reviews before merging changes into production. This is important because it ensures quality code and maintains momentum of changes to your projects.
+As a collaborator on a repository, you will get and give pull request reviews before merging changes into production. This is important because it ensures quality code and maintains momentum of changes to your project.
 
-As you can see, I've opened this pull request and requested a review from you. Pull requests, unlike issues where project contributors _discuss_ a bug or new feature, are places to _share_ the changes being made to the repository.
+As you can see, I've opened this pull request and it would be great if you could review it. Pull requests, unlike issues where project contributors _discuss_ a bug or new feature, are places to _share_ the changes being made to the repository.
 
 **Comments** are used early in the review process when an explicit approval or request for changes is not yet warranted. They enable you to inquire about the proposed change, make suggestions, and help your team create awesome features.
-
-Not only can you ask questions or make suggestions to the proposed change, you can suggest changes directly to the code using the [```suggestion ``` feature](https://team.githubapp.com/posts/31384). _Note: At the time of the team post, this feature will only be staff shipped, so only expect to see it on repositories in the `github` org._
 
 ### Responsibilities of a reviewer
 
