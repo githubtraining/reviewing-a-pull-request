@@ -4,8 +4,8 @@ Thanks for making that suggestion on my change. In my excitement to ship more st
 
 Not all of the pull request reviews you perform in the future will decide the color of the blocks in our Tetris game. :smile:
 
-Although you may be tempted to leave shorthand comments like: 👍, 💩, awesome!, or no; these don't give the author of the PR much to run with. Providing comments **like the following enhance** the conversation and enable the author of the PR to respond:
- 
+Although you may be tempted to leave shorthand comments like: 👍, 👎🏽, awesome!, or no; these don't give the author of the PR much to run with. Providing comments **like the following enhance** the conversation and enable the author of the PR to respond:
+
 - This looks like it’ll be really helpful to our users, but I’m not entirely sure about the flow. I also have some concerns about the efficiency of these queries.
 - Although I think this feature might be useful, do we have any data that identifies that our users need it?
 
