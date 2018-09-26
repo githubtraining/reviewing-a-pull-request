@@ -2,151 +2,151 @@ title: Public Reviewing Pull Requests
 tagline: Start collaborating for GitHub, with GitHub.
 description: Learn how GitHub uses pull request reviews to communicate and collaborate during the development process.
 template:
-		name: public-reviewing-pull-requests
-		url: https://github.com/githubtraining/public-review-pull-requests-template.git
+    name: public-reviewing-pull-requests
+    url: https://github.com/githubtraining/public-review-pull-requests-template.git
 before:
-	- type: updateBranchProtection
-	- type: createIssue
-		title: Welcome
-		body: 01_intro.md
+  - type: updateBranchProtection
+  - type: createIssue
+    title: Welcome
+    body: 01_intro.md
 steps:
-	- title: Assign Yourself
-		description: Assign yourself to the first issue in this repository
-		event: issues.assigned
-		link: {{ repoUrl }}/issues/1
-		actions:
-			- type: gate
-				left: '%payload.assignee.login%'
-				operator: ===
-				right: '%user.username%'
-			- type: createPullRequest
-				title: Update Game Instructions
-				body: 02_review-101.md
-				head: game-instructions
-				action_id: pr2
-			- type: respond
-				with: 02_close-first-issue.md
-				data:
-					url: '%actions.pr2.data.html_url%'
-			- type: closeIssue
-				issue: Welcome
+  - title: Assign Yourself
+    description: Assign yourself to the first issue in this repository
+    event: issues.assigned
+    link: {{ repoUrl }}/issues/1
+    actions:
+      - type: gate
+        left: '%payload.assignee.login%'
+        operator: ===
+        right: '%user.username%'
+      - type: createPullRequest
+        title: Update Game Instructions
+        body: 02_review-101.md
+        head: game-instructions
+        action_id: pr2
+      - type: respond
+        with: 02_close-first-issue.md
+        data:
+          url: '%actions.pr2.data.html_url%'
+      - type: closeIssue
+        issue: Welcome
 
-	- title: Comment on a pull request
-		description: Comment on the pull request opened in your repository
-		event: pull_request_review.submitted
-		link: {{ repoUrl }}/pull/2
-		actions:
-			- type: gate
-				every: true
-				gates:
-					- left: '%payload.review.state%'
-						operator: ===
-						right: 'commented'
-					- left: '%payload.pull_request.title%'
-						operator: ===
-						right: Update Game Instructions
-				else:
-					- type: respond
-						with: error.md
-			- type: respond
-				with: 03_successful-comment.md
+  - title: Comment on a pull request
+    description: Comment on the pull request opened in your repository
+    event: pull_request_review.submitted
+    link: {{ repoUrl }}/pull/2
+    actions:
+      - type: gate
+        every: true
+        gates:
+          - left: '%payload.review.state%'
+            operator: ===
+            right: 'commented'
+          - left: '%payload.pull_request.title%'
+            operator: ===
+            right: Update Game Instructions
+        else:
+          - type: respond
+            with: error.md
+      - type: respond
+        with: 03_successful-comment.md
 
-	- title: Approve a pull request
-		description: Approve the pull request so that it can be merged
-		event: pull_request_review.submitted
-		link: {{ repoUrl }}/pull/2
-		actions:
-			- type: gate
-				left: '%payload.review.state%'
-				operator: ===
-				right: 'approved'
-			- type: mergeBranch
-				head: game-instructions
-			- type: createPullRequest
-				title: Change Tetris Colors
-				body: 04_requesting-changes.md
-				head: update-colors
-				action_id: pr3
-			- type: respond
-				with: 04_merging-pull-request.md
-				data:
-					url: '%actions.pr3.data.html_url%'
+  - title: Approve a pull request
+    description: Approve the pull request so that it can be merged
+    event: pull_request_review.submitted
+    link: {{ repoUrl }}/pull/2
+    actions:
+      - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'approved'
+      - type: mergeBranch
+        head: game-instructions
+      - type: createPullRequest
+        title: Change Tetris Colors
+        body: 04_requesting-changes.md
+        head: update-colors
+        action_id: pr3
+      - type: respond
+        with: 04_merging-pull-request.md
+        data:
+          url: '%actions.pr3.data.html_url%'
 
-	- title: Requesting Changes
-		description: Leave a review that is requesting changes
-		event: pull_request_review.submitted
-		link: {{ repoUrl }}/pull/3
-		actions:
-			- type: gate
-				left: '%payload.review.state%'
-				operator: ===
-				right: 'changes_requested'
-				else:
-				- type: gate
-					gates:
-						- left: '%payload.review.state'
-							operator: ===
-							right: COMMENT
-						- type: respond
-							with: 05_general-comment.md
-						- left: '%payload.review.state'
-							operator: ===
-							right: APPROVE
-						- type: respond
-							with: 05_approval.md
-			- type: mergeBranch
-				head: add-multiple-colors
-				base: update-colors
-			- type: respond
-				with: 05_changes-requested.md
+  - title: Requesting Changes
+    description: Leave a review that is requesting changes
+    event: pull_request_review.submitted
+    link: {{ repoUrl }}/pull/3
+    actions:
+      - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'changes_requested'
+        else:
+        - type: gate
+          gates:
+            - left: '%payload.review.state'
+              operator: ===
+              right: COMMENT
+            - type: respond
+              with: 05_general-comment.md
+            - left: '%payload.review.state'
+              operator: ===
+              right: APPROVE
+            - type: respond
+              with: 05_approval.md
+      - type: mergeBranch
+        head: add-multiple-colors
+        base: update-colors
+      - type: respond
+        with: 05_changes-requested.md
 
-	- title: Approve another pull request
-		description: Approve the pull request that has been changed
-		event: pull_request_review.submitted
-		link: {{ repoUrl }}/pull/3
-		actions:
-			- type: gate
-				left: '%payload.review.state%'
-				operator: ===
-				right: 'approved'
-			- type: mergePullRequest
-			- type: createIssue
-				title: The Final Review
-				body: 06_final-flow.md
-				action_id: finalreview
-			- type: respond
-				with: 06_thanks-for-approval.md
-				data:
-					url: '%actions.finalreview.data.html_url%'
+  - title: Approve another pull request
+    description: Approve the pull request that has been changed
+    event: pull_request_review.submitted
+    link: {{ repoUrl }}/pull/3
+    actions:
+      - type: gate
+        left: '%payload.review.state%'
+        operator: ===
+        right: 'approved'
+      - type: mergePullRequest
+      - type: createIssue
+        title: The Final Review
+        body: 06_final-flow.md
+        action_id: finalreview
+      - type: respond
+        with: 06_thanks-for-approval.md
+        data:
+          url: '%actions.finalreview.data.html_url%'
 
-	- title: Request a reviewer
-		description: Create a new pull request, and request that the Lab Bot reviews it.
-		event: pull_request.opened
-		link: {{ repoUrl }}/pull/5
-		actions:
-			- type: createReview
-				body: 07_approve-pr.md
-				event: APPROVE
-			- type: closeIssue
-				issue: The Final Review
-			- type: respond
-				issue: The Final Review
-				with: 07_close-issue.md
-				data:
-					url: '%actions.issue.data.html_url%'
+  - title: Request a reviewer
+    description: Create a new pull request, and request that the Lab Bot reviews it.
+    event: pull_request.opened
+    link: {{ repoUrl }}/pull/5
+    actions:
+      - type: createReview
+        body: 07_approve-pr.md
+        event: APPROVE
+      - type: closeIssue
+        issue: The Final Review
+      - type: respond
+        issue: The Final Review
+        with: 07_close-issue.md
+        data:
+          url: '%actions.issue.data.html_url%'
 
-	- title: Merge pull request
-		description: Merge the pull request once I've approved it
-		event: pull_request.closed
-		link: {{ repoUrl }}/pull/5
-		actions:
-			- type: gate
-				left: '%payload.pull_request.merged%'
-			- type: createIssue
-				title: You did it!
-				body: 08_final-issue.md
-				action_id: finalIssue
-			- type: respond
-				with: 08_comment-final-pr.md
-				data:
-					url: '%actions.finalIssue.data.html_url%'
+  - title: Merge pull request
+    description: Merge the pull request once I've approved it
+    event: pull_request.closed
+    link: {{ repoUrl }}/pull/5
+    actions:
+      - type: gate
+        left: '%payload.pull_request.merged%'
+      - type: createIssue
+        title: You did it!
+        body: 08_final-issue.md
+        action_id: finalIssue
+      - type: respond
+        with: 08_comment-final-pr.md
+        data:
+          url: '%actions.finalIssue.data.html_url%'
