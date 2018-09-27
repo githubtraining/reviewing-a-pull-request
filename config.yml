@@ -62,6 +62,11 @@ steps:
         right: 'approved'
       - type: mergeBranch
         head: game-instructions
+      - type: octokit
+        method: gitdata.deleteReference
+        owner: '%payload.repository.owner.login%'
+        repo: '%payload.repository.name%'
+        ref: game-instructions
       - type: createPullRequest
         title: Change Tetris Colors
         body: 04_requesting-changes.md
@@ -110,6 +115,11 @@ steps:
         operator: ===
         right: 'approved'
       - type: mergePullRequest
+      - type: octokit
+        method: gitdata.deleteReference
+        owner: '%payload.repository.owner.login%'
+        repo: '%payload.repository.name%'
+        ref: update-colors
       - type: createIssue
         title: The Final Review
         body: 06_final-flow.md
