@@ -7,3 +7,5 @@ Nice work helping me with all of these pull requests! As you continue working on
 ![gracehoppertocat](https://octodex.github.com/images/gracehoppertocat.jpg)
 
 GitHub is constantly adding new features to our platform, and pull requests aren't exempt from that! Be on the lookout for a new beta feature that enables you to apply suggested changes from the pull request. If you have write access to a repository you will be able to click the **Apply suggestion** button right from the **Conversation** tab of the pull request. The suggestion will be applied as a new commit on the pull request with the person who suggested the change as the author and you as the committer. 
+
+For more information about this awesome new feature, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
