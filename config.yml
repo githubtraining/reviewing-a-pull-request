@@ -3,7 +3,7 @@ tagline: Improve your collaboration on GitHub with pull request reviews.
 description: See how collaboration works on GitHub and start building great things, together.
 template:
     name: reviewing-a-pull-request
-    repo: https://github.com/githubtraining/reviewing-a-pull-request-template.git
+    repo: reviewing-a-pull-request-template
 before:
   - type: updateBranchProtection
   - type: createIssue
