@@ -1,8 +1,8 @@
-title: Public Reviewing Pull Requests
+title: Reviewing pull requests
 tagline: Improve your collaboration on GitHub with pull request reviews.
-description: Learn how to use pull request reviews to communicate and collaborate during the development process.
+description: See how collaboration works on GitHub and start building great things, together.
 template:
-    name: public-reviewing-pull-requests
+    name: reviewing-a-pull-request
     url: https://github.com/githubtraining/public-review-pull-requests-template.git
 before:
   - type: updateBranchProtection
