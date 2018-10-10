@@ -8,7 +8,7 @@ To continue in the course, I would like you to assign yourself to this issue. As
 
 ## Pull Requests Reviews 101
 
-The act of reviewing a pull request is an opportunity to examine the changes another contributor has made to a repository. While reviewing a pull request you can extrapolate how another contributor solved a problem which is an awesome opportunity to learn more about how the repository code functions and how they develop. Whether the pull request is merged into the project, a pull request review is a great learning opportunity for you!
+Reviewing a pull request is an opportunity to examine another contributor's changes. While reviewing a pull request, you can extrapolate how someone else solved a problem. It's an awesome opportunity to learn more about how the code works and how others solve problems. Reviewing a pull request is a great learning opportunity!
 
 ### :keyboard: Activity: Assign yourself to this issue
 

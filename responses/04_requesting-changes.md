@@ -27,7 +27,7 @@ When summarizing your review, consider letting the author know whether or not yo
 
 #### Empathy and Constructive Feedback
 
-The goal of providing feedback on a pull request is to ensure that the best possible change is being applied to the application. If a change isn't fixing the problem or adding a new feature the best possible way, it is your role as a reviewer to provide that feedback to the author in a meaningful and constructive manner. 
+The goal of providing feedback on a pull request is to ensure that the best possible change is being added. Sometimes, a change isn't addressing the problem in the best possible way. It's the reviewer's responsibility to provide meaningful and constructive feedback.
 
 <details><summary>Requesting Changes 101</summary>
     - Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, scroll down to the end of the timeline on the Conversation tab, then click **Cancel review**._
