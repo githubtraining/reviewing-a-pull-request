@@ -1,19 +1,20 @@
 # Requesting a reviewer
 
-Wow, I've been working _really_ hard on this project, but I haven't let you show off your sweet programming skills yet. I'd like you to make a change to our project to really make it your own.  :+1: After you create your change and open a pull request, I would like to review it. The best way to get someone to review your pull request is to request for them to review it.
+I've been working _really_ hard on this project, but I haven't let you show off your programming skills yet. I'd like you to make a change to our project to make it your own.  :+1: After you create your change and open a pull request, I would like to review it. The best way to get someone to review your pull request is to request for them to review it.
 
-As your reviewer, I'm going to check to make sure your change doesn't break anything :construction:, but it is your job as the author of the pull request to tell me what you are trying to accomplish. By letting me know what you are trying to do in the initial comment of the pull request, I can start testing and reviewing immediately. This allows us to work asynchronously, so I can continue being a night-owl and you can enjoy being the early bird. :owl: :bird:
+As a reviewer, I'm going to check to make sure the changes don't break anything. :construction: But, it's your job as the author to tell me what you are trying to do. By clarifying the goals in your first comment, I can start reviewing immediately. This allows us to work asynchronously, so I can continue being a night-owl and you can enjoy being the early bird. :owl: :bird:
 
 ### :keyboard: Activity: Request a reviewer
 
-1. Create a branch based on `master` in this repository. Feel free to name it whatever you like. (You can do this locally, or from the GitHub UI). If you aren't sure how to do this, try the [Introduction to GitHub course](https://lab.github.com/githubtraining/introduction-to-github) and then come back to give it another try.
-1. While checked out to your branch, make a change of your choosing to your project. Your change can be to the code in the `index.html` file, to the `README.md`, or anything else you'd like.
-1. Open a pull request. Remember, reviewing is a two way street, so make sure you include relevant and helpful information within the body of your pull request. 
-1. In the pull request, click **Request** in the right sidebar under **Reviewers**.
-    - _Note: In private repositories you will only be able to request reviews from other invited collaborators in the repository._
-1. Type the username of the person or the name of the team you're asking to review your changes, then click their team name or username to request a review. If you don't know who to request, go ahead and assign `@githubteacher`.
+1. Create a branch based on `master` in this repository
+1. On your branch, make a change of your choosing to your project
+1. Open a pull request, including relevant and helpful information within the body
+1. In the pull request, click **Request** in the right sidebar under **Reviewers**
+    - _Note: In private repositories, you can only request reviews from repository collaborators_
+1. Type the username or team name you're asking to review your changes, and click their name
+  - If you don't know who to request, assign `@githubteacher`
 
 <hr>
 <h3 align="center">Return to this issue for my next comment</h3>
 
-> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
+> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
