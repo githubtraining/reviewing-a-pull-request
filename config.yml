@@ -49,7 +49,15 @@ steps:
           - type: respond
             with: error.md
       - type: respond
-        with: 03_successful-comment.md
+        with: 03_successful-comment.md 06_request-review.md #needs edited
+
+  - title: Request a reviewer
+    description: Add yourself as a requested reviewer on this pull request
+    event: # reviewer added
+    link: '{{ repoUrl }}/pull/2'
+    actions:
+      - type: #check if user suggested themselves on the PR
+      - type: # comment that they did it, now approve it
 
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged
@@ -125,41 +133,39 @@ steps:
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
         ref: heads/update-colors
-      - type: createIssue
-        title: The Final Review
-        body: 06_final-flow.md
-        action_id: finalreview
       - type: respond
         with: 06_thanks-for-approval.md
         data:
-          url: '%actions.finalreview.data.html_url%'
+          url: '%actions.reviewRM.data.html_url%'
 
-  - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.opened
-    link: '{{ repoUrl }}/pull/5'
+  - title: Open a pull request
+    description: Open a pull request to master with the README-UPDATE branch.
+    event: # opened pull request
+    link: '{{ repoUrl }}/pull/4'
     actions:
+      - type: # make sure PR is base master, head readme-update
+      - type: # suggest changes
+
+  - title: Accept suggested changes
+    description: #TODO
+    event: #TODO
+    link: '{{ repoUrl }}/pull/4'
+    actions:
+      - type: gate # check if they accepted the change
       - type: createReview
-        body: 07_approve-pr.md
+        body: 07_approve-pr.md #needs editing
         event: APPROVE
-      - type: closeIssue
-        issue: The Final Review
-      - type: respond
-        issue: The Final Review
-        with: 07_close-issue.md
-        data:
-          url: '%actions.issue.data.html_url%'
 
   - title: Merge pull request
     description: Merge the pull request once I've approved it
     event: pull_request.closed
-    link: '{{ repoUrl }}/pull/5'
+    link: '{{ repoUrl }}/pull/4'
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
       - type: createIssue
         title: You did it!
-        body: 08_final-issue.md
+        body: 08_final-issue.md #needs editing
         action_id: finalIssue
       - type: respond
         with: 08_comment-final-pr.md
