@@ -125,27 +125,41 @@ steps:
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
         ref: heads/update-colors
-      - type: createIssue
-        title: The Final Review
-        body: 06_final-flow.md
-        action_id: finalreview
       - type: respond
-        with: 06_thanks-for-approval.md
-        data:
-          url: '%actions.finalreview.data.html_url%'
+        with: 08-suggest.md
 
+  - title: Open a pull request from readme-update
+    description: Do it
+    event: pull_request.opened
+    link: '{{ repoUrl }}/compare/readme-update?expand=1'
+    actions:
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%payload.repository.owner.login%'
+        repo: '%payload.repository.name%'
+        number: '%payload.pull_request.number%'
+        body: 'text-goes-here\n\n```suggestion\nYou can play the game at: https://%user.username%.github.io/github-games/\n```'
+        commit_id: '%payload.pull_request.head.sha%'
+        position: 5
 
-New course flow: 
-  - After approve another pull request, action above, a new issue with `08-suggest.md` needs to be created. 
-  - The user will create a PR with the `readme-update` branch , error message for selecting the wrong branch is `08-wrong-branch.md`
-  - App responds on PR with suggested change using the following text on Line 5 of the README.md file
-    ```suggestion
-    You can play the game at: https://{{ user.username }}.github.io/github-games/
-    ``` 
-  - The user will accept the suggestion, I don't think we can test for this, but if we can I will create an error message if they haven't accepted it
-  - User is told to merge the PR and delete the branch
-  - Learning Lab creates issue with the Final Review and course continues as usual
+  - title: Apply the suggestion
+    description: Do it
+    event: pull_request.synchronize
+    link: '{{ repoUrl }}/pulls'
+    actions:
+      - type: createReview
+        event: APPROVE
+        body: good-job.md
 
+  - title: Merge that PR
+    description: Do it
+    event: pull_request.closed
+    link: '{{ repoUrl }}/pulls'
+    actions:
+      - type: gate
+        left: pull_request.merged
+      - type: respond
+        with: open-next-pr.md
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
