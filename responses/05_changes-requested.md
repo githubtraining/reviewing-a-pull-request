@@ -13,12 +13,8 @@ While you were reading this, I made your suggested changes, so if you could appr
 
 ### :keyboard: Activity: Give another pull request review
 
-1. In the pull request, click the **Files changed** tab.
-1. Review the changes in the pull request by optionally commenting on specific lines.
-1. Above the changed code, click **Review changes**.
-1. Type a comment summarizing your feedback on the proposed changes.
-1. Select **Approve** to approve merging the changes proposed in the pull request.
-1. Click **Submit review**.
+1. In the pull request, scroll down to the bottom and look for your own review status
+1. Next to your review, click **Approve changes**
 
 <hr>
 <h3 align="center">Return to this pull request for my next comment</h3>
