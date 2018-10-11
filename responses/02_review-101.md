@@ -25,10 +25,10 @@ Additionally, some repositories use the [CODEOWNERS](https://help.github.com/art
 
 ### :keyboard: Activity: Add a comment to my pull request
 
-1. On the pull request, click **Files changed**.
-1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon.
-1. In the comment window, type your comment. You can ask a question, or leave a more general comment.
-1. When you're done, click **Add single comment**.
+1. On the pull request, click **Files changed**
+1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon
+1. In the comment window, type a question or leave a more general comment
+1. When you're done, click **Add single comment**
 
 <hr>
 <h3 align="center">Return to this pull request for my next comment</h3>

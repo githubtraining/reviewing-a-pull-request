@@ -18,7 +18,7 @@ Reviewing a pull request is an opportunity to examine another contributor's chan
 
 ### :keyboard: Activity: Assign yourself to this issue
 
-1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section.
+1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section
 
 <hr>
 <h3 align="center">I'll respond below for your next step</h3>
