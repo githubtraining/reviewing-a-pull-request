@@ -128,7 +128,7 @@ steps:
       - type: respond
         with: 08-suggest.md
         data:
-          url: '%payload.repository.html_url%/compare/readme-update?expand=1'
+          url: '%payload.repository.html_url%/compare/update-readme?expand=1'
 
   - title: Open a pull request from readme-update
     description: Do it
