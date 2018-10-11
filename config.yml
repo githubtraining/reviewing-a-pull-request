@@ -137,17 +137,11 @@ steps:
 
   - title: Request a reviewer
     description: Add yourself as a requested reviewer on this pull request
-    event: # check for an added requested reviewer
-    link: '{{ repoUrl }}/pull/5'
+    event: # reviewer added
+    link: '{{ repoUrl }}/pull/4'
     actions:
-      - type: #suggest changes
-      - type: closeIssue
-        issue: The Final Review
-      - type: respond
-        issue: The Final Review
-        with: 07_close-issue.md #check if it needs edits
-        data:
-          url: '%actions.issue.data.html_url%'
+      - type: #check if user suggested themselves on the PR
+      - type: # suggest changes
 
   - title: Accept suggested changes
     actions:
@@ -159,7 +153,7 @@ steps:
   - title: Merge pull request
     description: Merge the pull request once I've approved it
     event: pull_request.closed
-    link: '{{ repoUrl }}/pull/5'
+    link: '{{ repoUrl }}/pull/4'
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
