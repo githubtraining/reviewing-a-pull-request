@@ -6,6 +6,10 @@ To deploy this game on GitHub Pages and actually see our improvements in real ti
 
 To continue in the course, I would like you to assign yourself to this issue. Assignees on issues and pull requests let other team members know who is responsible for making sure an issue or pull request is completed in an easily accessible and visual manner.
 
+## Pull Requests Reviews 101
+
+Reviewing a pull request is an opportunity to examine another contributor's changes. While reviewing a pull request, you can extrapolate how someone else solved a problem. It's an awesome opportunity to learn more about how the code works and how others solve problems. Reviewing a pull request is a great learning opportunity!
+
 ### :keyboard: Activity: Assign yourself to this issue
 
 1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section.
