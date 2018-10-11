@@ -153,7 +153,7 @@ steps:
           For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
 
           ```suggestion
-          You can play the game at: https://%user.username%.github.io/github-games/
+          You can play the game [here](https://%user.username%.github.io/github-games/)
           ```
         commit_id: '%payload.pull_request.head.sha%'
         position: 1
