@@ -156,7 +156,7 @@ steps:
           You can play the game at: https://%user.username%.github.io/github-games/
           ```
         commit_id: '%payload.pull_request.head.sha%'
-        position: 0
+        position: 1
 
   - title: Apply the suggestion
     description: Do it
