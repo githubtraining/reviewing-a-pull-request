@@ -8,7 +8,9 @@ To deploy this game on GitHub Pages and actually see our improvements in real ti
 
 For this course, you'll need to know how to create a branch on GitHub, commit changes using Git, and open a pull request on GitHub. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
-To continue in the course, I would like you to assign yourself to this issue. Assignees on issues and pull requests let other team members know who is responsible for making sure an issue or pull request is completed in an easily accessible and visual manner.
+### Assignees
+
+Assignees on issues and pull requests let other team members know who is responsible for making sure an issue or pull request is completed in an easily accessible and visual manner.
 
 ## Pull Requests Reviews 101
 
