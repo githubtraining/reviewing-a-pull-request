@@ -134,6 +134,19 @@ steps:
         data:
           url: '%actions.finalreview.data.html_url%'
 
+
+New course flow: 
+  - After approve another pull request, action above, a new issue with `08-suggest.md` needs to be created. 
+  - The user will create a PR with the `readme-update` branch , error message for selecting the wrong branch is `08-wrong-branch.md`
+  - App responds on PR with suggested change using the following text on Line 5 of the README.md file
+    ```suggestion
+    You can play the game at: https://{{ user.username }}.github.io/github-games/
+    ``` 
+  - The user will accept the suggestion, I don't think we can test for this, but if we can I will create an error message if they haven't accepted it
+  - User is told to merge the PR and delete the branch
+  - Learning Lab creates issue with the Final Review and course continues as usual
+
+
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
     event: pull_request.opened
