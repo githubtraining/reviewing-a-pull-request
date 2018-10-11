@@ -125,15 +125,15 @@ steps:
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
         ref: heads/update-colors
-      - type: #create pull request
-        # figure out what this points to
-        title: The Final Review
+      - type: createPullRequest
+        title: Update the README.md
         body: 06_final-flow.md # this needs editing
-        action_id: finalreview
+        head: update-readme
+        action_id: reviewRM
       - type: respond
         with: 06_thanks-for-approval.md
         data:
-          url: '%actions.finalreview.data.html_url%'
+          url: '%actions.reviewRM.data.html_url%'
 
   - title: Request a reviewer
     description: Add yourself as a requested reviewer on this pull request
