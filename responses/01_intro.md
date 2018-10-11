@@ -1,8 +1,12 @@
 ## Welcome!
 
-Hello and welcome! In this course you will learn how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods. To do this, we'll be playing around with the code in this repository that makes a simple Tetris game. 
+Hello and welcome! In this course you will learn how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else, and other awesome collaboration methods. To do this, we'll be playing around with the code in this repository that makes a simple Tetris game.
 
 To deploy this game on GitHub Pages and actually see our improvements in real time, go to the **Settings** tab of this repository, and scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**. GitHub will create a deployment for you on GitHub Pages.
+
+### New to GitHub?
+
+For this course, you'll need to know how to create a branch on GitHub, commit changes using Git, and open a pull request on GitHub. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
 To continue in the course, I would like you to assign yourself to this issue. Assignees on issues and pull requests let other team members know who is responsible for making sure an issue or pull request is completed in an easily accessible and visual manner.
 
