@@ -138,7 +138,22 @@ steps:
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
         number: '%payload.pull_request.number%'
-        body: 'text-goes-here\n\n```suggestion\nYou can play the game at: https://%user.username%.github.io/github-games/\n```'
+        body: > 
+          Thanks for opening this pull request, @%user.username%.
+          I've made a suggested change to this pull request because I think you should link your version of the game in your README file. I made this suggestion by creating a review comment that uses some :sparkle: special :sparkle: formatting.
+          It looks like this:
+
+              ```js
+              ```suggestion
+              You can play the game at: https://%user.username%.github.io/github-games/
+              ```
+              ```
+
+          For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
+
+          ```suggestion
+          You can play the game at: https://%user.username%.github.io/github-games/
+          ```
         commit_id: '%payload.pull_request.head.sha%'
         position: 5
 
@@ -149,7 +164,7 @@ steps:
     actions:
       - type: createReview
         event: APPROVE
-        body: good-job.md
+        body: 08-suggest-merge.md
 
   - title: Merge that PR
     description: Do it
@@ -159,7 +174,7 @@ steps:
       - type: gate
         left: pull_request.merged
       - type: respond
-        with: open-next-pr.md
+        with: 06-final-flow.md
 
   - title: Request a reviewer
     description: Create a new pull request, and request that the Lab Bot reviews it.
