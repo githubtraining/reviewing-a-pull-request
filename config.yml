@@ -127,6 +127,8 @@ steps:
         ref: heads/update-colors
       - type: respond
         with: 08-suggest.md
+        data:
+          url: '%payload.repository.html_url%/compare/readme-update?expand=1'
 
   - title: Open a pull request from readme-update
     description: Do it
