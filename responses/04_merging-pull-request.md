@@ -1,6 +1,6 @@
 ## Great work!
 
-Thanks for approving my pull request. Now that my pull request is approved, I can merge it into our project.
+Thanks for approving my pull request. Now, I can merge it into our project.
 
 
 <hr>
