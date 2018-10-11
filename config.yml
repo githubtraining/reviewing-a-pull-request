@@ -125,14 +125,8 @@ steps:
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
         ref: heads/update-colors
-      - type: createIssue
-        title: The Final Review
-        body: 06_final-flow.md
-        action_id: finalreview
       - type: respond
-        with: 06_thanks-for-approval.md
-        data:
-          url: '%actions.finalreview.data.html_url%'
+        with: 08-suggest.md
 
 
 New course flow: 
