@@ -39,7 +39,7 @@ The goal of providing feedback on a pull request is to ensure that the best poss
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon
 1. In the comment window, type your comment
 1. Click **Start a review**
-  - If you have already started a review, you can click **Add review comment**
+    - If you have already started a review, you can click **Add review comment**
 1. Above the changed code, click **Review changes**
 1. Type a comment summarizing your feedback on the proposed changes
     - _Note: The problem here is that too many Tetris pieces are the same color. In your review, you might want to suggest that I choose colors which would be easier to see when playing the game._
