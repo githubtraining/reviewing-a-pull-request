@@ -79,7 +79,7 @@ steps:
         data:
           url: '%actions.pr3.data.html_url%'
 
-  - title: Requesting Changes
+  - title: Requesting changes
     description: Leave a review that is requesting changes
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/3'
@@ -189,7 +189,7 @@ steps:
         event: APPROVE
         body: 08-suggest-merge.md
 
-  - title: Merge that PR
+  - title: Merge the pull request
     description: Merge the pull request after applying the Suggested Change
     event: pull_request.closed
     link: '{{ repoUrl }}/pulls'
