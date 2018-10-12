@@ -133,7 +133,7 @@ steps:
           url: '%payload.repository.html_url%/compare/update-readme?expand=1'
 
   - title: Open a pull request from readme-update
-    description: Create a pull request to learn about Suggesting Changes.
+    description: Create a pull request to learn about suggesting changes.
     event: pull_request
     link: '{{ repoUrl }}/compare/readme-update?expand=1'
     actions:
