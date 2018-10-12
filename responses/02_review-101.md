@@ -19,7 +19,7 @@ These broad responsibilities can include more specific goals, like:
 - Commenting on, approving, or requesting changes on the PR
 - Providing suggestions for alternate or better implementation details
 
-Some repositories use the [CODEOWNERS](https://help.github.com/articles/about-codeowners/) feature as a part of the review process. When required, the code owner has the final authority to approve the pull request. Approving a pull request with `CODEOWNERS` may not be a formal approval, but it does show  _confidence_.
+Some repositories use a [CODEOWNERS](https://help.github.com/articles/about-codeowners/) file. The `CODEOWNERS` file assigns responsibility for certain parts of the code to specific individuals or teams. When the `CODEOWNERS` feature is enabled, only the code owner has the final authority to approve the pull request. Your review may not be a formal approval, but it does show confidence.
 
 ## Step 2: Communicate in pull requests
 
