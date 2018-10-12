@@ -14,13 +14,12 @@ Assignees on issues and pull requests let other team members know who is respons
 
 Reviewing a pull request is an opportunity to examine another contributor's changes. While reviewing a pull request, you can extrapolate how someone else solved a problem. It's an awesome opportunity to learn more about how the code works and how others solve problems. Reviewing a pull request is a great learning opportunity!
 
-### :keyboard: Activity: Assign yourself to this issue & enable GitHub Pages
+### :keyboard: Activity: Enable GitHub Pages & Assign yourself to this issue
 
-1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section
 1. Under your repository name, click [Settings](https://github.com/{{ owner }}/{{ repo }}/settings)
 1. In the "GitHub Pages" section, use the Select source drop-down menu to select the `master branch` as your GitHub Pages publishing source.
 1. Click **Save**
-
+1. On the right side of the screen, click the `assign yourself` text under the **Assignees** section
 
 <hr>
 <h3 align="center">I'll respond below for your next step</h3>
