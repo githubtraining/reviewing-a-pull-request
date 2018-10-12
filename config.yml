@@ -171,7 +171,7 @@ steps:
           You can play the game [here](https://%user.username%.github.io/github-games/)
           ```
         commit_id: '%payload.pull_request.head.sha%'
-        position: 14
+        position: 4
 
   - title: Apply the suggestion
     description: Implement a change from a Suggested Change
