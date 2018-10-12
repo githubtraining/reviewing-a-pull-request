@@ -4,3 +4,4 @@ Thanks for accepting my suggested change. Now that the pull request is finished,
 
 1. Click **Merge pull request**
 1. Click **Confirm merge**
+1. Delete the branch
