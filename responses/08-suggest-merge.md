@@ -1,3 +1,5 @@
+## Step 7: Merge this pull request
+
 Thanks for accepting my suggested change. Now that the pull request is finished, you should merge the change in and start playing your game!
 
 ### :keyboard: Activity: Merge pull request

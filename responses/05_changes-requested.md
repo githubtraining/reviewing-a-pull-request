@@ -9,6 +9,8 @@ Although you may want to leave short comments like: 👍, 👎🏽, awesome!, or
 - This looks like it’ll be helpful to our users, but I’m not sure about the flow. I also have some concerns about the efficiency of these queries.
 - Although this feature might be useful, do we have any data that identifies that our users need it?
 
+## Step 5: Practice reviews
+
 While you were reading this, I made your suggested changes. If you could approve my pull request, that would be awesome!
 
 ### :keyboard: Activity: Give another pull request review

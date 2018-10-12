@@ -1,10 +1,8 @@
 # Using `request changes` on a pull request
 
-Thanks again for all your help on that last pull request. With our powers combined, _anything_ is possible! This last change might introduce some new changes that aren't going to look great.
+Thanks again for all your help on that last pull request. With our powers combined, _anything_ is possible! This next change might introduce some new changes that aren't going to look great.
 
 Sometimes, the author might identify that something isn't working. They might need a helping hand :wave: to solve the problem. In other instances, it might only work in their environment. When reviewing a pull request, look at and test the code to pinpoint any bugs or unexpected behavior.
-
-If you could check out this code for me and tell me what is wrong, that would be fantastic.
 
 ### Writing a review
 
@@ -28,6 +26,10 @@ The goal of providing feedback on a pull request is to ensure that the best poss
 ### Requesting Changes 101
 
 Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review and its pending comments, scroll down to the end of the page in the Conversation tab. Then click **Cancel review**.
+
+## Step 4: Leave a review that asks for changes
+
+If you could check out this code for me and tell me what is wrong, that would be fantastic.
 
 ### :keyboard: Activity: Requesting changes
 

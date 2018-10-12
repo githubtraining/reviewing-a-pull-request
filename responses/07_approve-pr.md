@@ -1,4 +1,6 @@
-Thanks for making these changes to the project. This looks great, and these changes are ready to merge. :+1: If you requested a review from a friend, you can wait for them to approve your pull request if you'd like. If not, process with the activity below.
+## Step 6: Merge this pull request
+
+Thanks for making these changes to the project. This looks great, and these changes are ready to merge. :+1: If you requested a review from a friend, you can wait for them to approve your pull request if you'd like. If not, continue with the activity below.
 
 ### :keyboard: Activity: Merge
 
