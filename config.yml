@@ -134,9 +134,17 @@ steps:
 
   - title: Open a pull request from readme-update
     description: Create a pull request to learn about Suggesting Changes
-    event: pull_request.opened
+    event: pull_request
     link: '{{ repoUrl }}/compare/readme-update?expand=1'
     actions:
+      - type: gate
+        gates:
+          - left: "%payload.action%"
+            operator: "==="
+            right: "opened"
+          - left: "%payload.action%"
+            operator: "==="
+            right: "edited"
       - type: gate
         left: '%payload.pull_request.body%'
         else:
