@@ -200,4 +200,4 @@ steps:
           - type: respond
             with: 08_accidental-close.md
       - type: respond
-        with: 08_comment-final-pr.md
+        with: 08_final-issue.md
