@@ -1,6 +1,8 @@
 title: Reviewing pull requests
 tagline: Improve your collaboration on GitHub with pull request reviews.
 description: See how collaboration works on GitHub and start building great things, together.
+tags: 
+  - GitHub
 template:
     name: reviewing-a-pull-request
     repo: reviewing-a-pull-request-template
@@ -131,10 +133,15 @@ steps:
           url: '%payload.repository.html_url%/compare/update-readme?expand=1'
 
   - title: Open a pull request from readme-update
-    description: Do it
+    description: Create a pull request to learn about Suggesting Changes
     event: pull_request.opened
     link: '{{ repoUrl }}/compare/readme-update?expand=1'
     actions:
+      - type: gate
+        left: '%payload.pull_request.body%'
+        else:
+          type: respond
+          with: fix-body.md
       - type: octokit
         method: pullRequests.createComment
         owner: '%payload.repository.owner.login%'
@@ -159,7 +166,7 @@ steps:
         position: 14
 
   - title: Apply the suggestion
-    description: Do it
+    description: Implement a change from a Suggested Change
     event: pull_request.synchronize
     link: '{{ repoUrl }}/pulls'
     actions:
@@ -168,43 +175,12 @@ steps:
         body: 08-suggest-merge.md
 
   - title: Merge that PR
-    description: Do it
+    description: Merge the pull request after applying the Suggested Change
     event: pull_request.closed
     link: '{{ repoUrl }}/pulls'
-    actions:
-      - type: gate
-        left: pull_request.merged
-      - type: respond
-        with: 06-final-flow.md
-
-  - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.opened
-    link: '{{ repoUrl }}/pull/5'
-    actions:
-      - type: createReview
-        body: 07_approve-pr.md
-        event: APPROVE
-      - type: closeIssue
-        issue: The Final Review
-      - type: respond
-        issue: The Final Review
-        with: 07_close-issue.md
-        data:
-          url: '%actions.issue.data.html_url%'
-
-  - title: Merge pull request
-    description: Merge the pull request once I've approved it
-    event: pull_request.closed
-    link: '{{ repoUrl }}/pull/5'
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
       - type: createIssue
         title: You did it!
         body: 08_final-issue.md
-        action_id: finalIssue
-      - type: respond
-        with: 08_comment-final-pr.md
-        data:
-          url: '%actions.finalIssue.data.html_url%'
