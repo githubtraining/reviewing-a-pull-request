@@ -137,6 +137,11 @@ steps:
     event: pull_request.opened
     link: '{{ repoUrl }}/compare/readme-update?expand=1'
     actions:
+      - type: gate
+        left: '%payload.pull_request.body%'
+        else:
+          type: respond
+          with: fix-body.md
       - type: octokit
         method: pullRequests.createComment
         owner: '%payload.repository.owner.login%'
