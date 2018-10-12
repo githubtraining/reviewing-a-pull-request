@@ -114,7 +114,7 @@ steps:
       - type: respond
         with: 05_changes-requested.md
 
-  - title: Approve another pull request
+  - title: Practice reviews
     description: Approve the pull request that has been changed.
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/3'
