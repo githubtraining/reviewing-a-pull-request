@@ -10,4 +10,4 @@ You can play the game at: https://{{ user.username }}.github.io/github-games/
 ```
 ```
 
-For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
+For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-changes-from-a-pull-request/) article.
