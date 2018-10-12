@@ -7,4 +7,4 @@ Thanks for accepting my suggested change. Now that the pull request is finished,
 1. Once your branch has been merged, you don't need it anymore. Click **Delete branch**.
 
 <hr>
-<h3 align="center">Process to the final <a href="{{ repoUrl }}/issues/5">issue</a></h3>
+<h3 align="center">Proceed to the final <a href="{{ repoUrl }}/{{ user.username }}/issues/5">issue</a></h3>

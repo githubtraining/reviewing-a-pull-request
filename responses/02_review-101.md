@@ -25,7 +25,7 @@ Some repositories use the [CODEOWNERS](https://help.github.com/articles/about-co
 
 ### :keyboard: Activity: Add yourself as a reviewer & comment on my pull request
 
-1. Click the **gear** icon next to the _Reviewers_ section on the right and select yourself.
+1. Click the `gear` :gear: icon next to the **Reviewers** section on the right and select yourself.
 1. On the pull request, click **Files changed**
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon
 1. In the comment window, type a question or leave a more general comment
