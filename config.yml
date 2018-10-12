@@ -1,6 +1,8 @@
 title: Reviewing pull requests
 tagline: Improve your collaboration on GitHub with pull request reviews.
 description: See how collaboration works on GitHub and start building great things, together.
+tags: 
+  - GitHub
 template:
     name: reviewing-a-pull-request
     repo: reviewing-a-pull-request-template
