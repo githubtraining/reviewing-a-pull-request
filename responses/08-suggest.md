@@ -4,7 +4,7 @@ Now that you have explored the different ways you can review a pull request it i
 
 ### :keyboard: Activity: Create a pull request
 
-1. Create a pull request using the `base: master` and `compare: update-readme` branches.
+1. Create a pull request using the `base: master` and `compare: update-readme` branches
 
 <hr>
 <h3 align="center">I'll meet you in the <a href="{{ url }}">pull request</a></h3>
