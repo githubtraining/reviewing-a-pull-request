@@ -1,6 +1,6 @@
 # Using `request changes` on a pull request
 
-Thanks again for all your help on that last pull request. With our powers combined, _anything_ is possible! This last change might introduce some new changes that aren't going to look great.
+Thanks again for all your help on that last pull request. With our powers combined, _anything_ is possible! This next change might introduce some new changes that aren't going to look great.
 
 Sometimes, the author might identify that something isn't working. They might need a helping hand :wave: to solve the problem. In other instances, it might only work in their environment. When reviewing a pull request, look at and test the code to pinpoint any bugs or unexpected behavior.
 
