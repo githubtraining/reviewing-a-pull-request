@@ -26,6 +26,8 @@ steps:
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
+      - type: requestReviewFromRegistrant
+        pullRequest: '%actions.pr2.data.number%'
       - type: respond
         with: 02_close-first-issue.md
         data:
