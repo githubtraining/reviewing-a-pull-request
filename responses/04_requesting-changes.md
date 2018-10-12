@@ -14,14 +14,10 @@ Reviewing the `diff`, the comparison of the proposed code, in the context of the
 
 #### Try it out
 
-For most things, actually trying out the proposed change is a good idea. This makes it a lot easier to tell if the actual change matches the intention.
+For most things, actually trying out the proposed change is a good idea. This makes it a lot easier to tell if the actual change matches the intention. You can do this by:
 
-<details><summary>
-Here are some ways you could try the implementation:</summary>
-
-- Clone the repository, and checkout to the branch compared in the pull request. Run the application in your local development environment.
-- Deploy the pull request to a review-lab or staging environment (as appropriate).
-</details>
+- Cloning the repository, and checking out to the branch compared in the pull request. Run the application in your local development environment.
+- Deploying the pull request to a review-lab or staging environment (as appropriate).
 
 When summarizing your review, let the author know if you completed any of these tests.
 
@@ -29,9 +25,9 @@ When summarizing your review, let the author know if you completed any of these 
 
 The goal of providing feedback on a pull request is to ensure that the best possible change is being added. Sometimes, a change isn't addressing the problem in the best possible way. It's the reviewer's responsibility to provide meaningful and constructive feedback.
 
-<details><summary>Requesting Changes 101</summary>
-    - Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review and its pending comments, scroll down to the end of the page in the Conversation tab. Then click **Cancel review**._
-</details>
+### Requesting Changes 101
+
+Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review and its pending comments, scroll down to the end of the page in the Conversation tab. Then click **Cancel review**.
 
 ### :keyboard: Activity: Requesting changes
 
