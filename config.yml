@@ -181,7 +181,7 @@ steps:
         position: 4
 
   - title: Apply the suggestion
-    description: Implement a change from a Suggested Change.
+    description: Implement a change from a suggested change.
     event: pull_request.synchronize
     link: '{{ repoUrl }}/pulls'
     actions:
@@ -190,7 +190,7 @@ steps:
         body: 08-suggest-merge.md
 
   - title: Merge the pull request
-    description: Merge the pull request after applying the Suggested Change.
+    description: Merge the pull request after applying the suggested change.
     event: pull_request.closed
     link: '{{ repoUrl }}/pulls'
     actions:
