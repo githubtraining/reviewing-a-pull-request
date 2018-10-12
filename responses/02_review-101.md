@@ -23,9 +23,8 @@ These broad responsibilities can include more specific goals, like:
 
 Some repositories use the [CODEOWNERS](https://help.github.com/articles/about-codeowners/) feature as a part of the review process. When required, the code owner has the final authority to approve the pull request. Approving a pull request with `CODEOWNERS` may not be a formal approval, but it does show  _confidence_.
 
-### :keyboard: Activity: Add yourself as a reviewer & comment on my pull request
+### :keyboard: Activity: Comment on my pull request
 
-1. Click the `gear` :gear: icon next to the **Reviewers** section on the right and select yourself
 1. On the pull request, click **Files changed**
 1. Hover over the line of code where you'd like to add a comment, and click the blue comment icon
 1. In the comment window, type a question or leave a more general comment
