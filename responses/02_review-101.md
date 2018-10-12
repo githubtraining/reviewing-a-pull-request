@@ -4,8 +4,6 @@ As a collaborator on a repository, you will get and give pull request reviews be
 
 As you can see, I've opened this pull request and it would be great if you could review it. Issues are where project contributors _discuss_ a bug or new feature. Pull requests are places to _share_ the changes made to the repository.
 
-When an approval or request for changes is not yet needed, consider using **comments**. Comments enable you to inquire about the proposed change early in the review process. You don't need to wait until something is complete to make suggestions.
-
 ### Responsibilities of a reviewer
 
 As a pull request reviewer, your role is to help the pull request author by making sure:
@@ -22,6 +20,10 @@ These broad responsibilities can include more specific goals, like:
 - Providing suggestions for alternate or better implementation details
 
 Some repositories use the [CODEOWNERS](https://help.github.com/articles/about-codeowners/) feature as a part of the review process. When required, the code owner has the final authority to approve the pull request. Approving a pull request with `CODEOWNERS` may not be a formal approval, but it does show  _confidence_.
+
+## Step 2: Communicate in pull requests
+
+When an approval or request for changes is not yet needed, consider using **comments**. Comments enable you to inquire about the proposed change early in the review process. You don't need to wait until something is complete to make suggestions.
 
 ### :keyboard: Activity: Add yourself as a reviewer & comment on my pull request
 

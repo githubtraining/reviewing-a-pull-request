@@ -1,4 +1,4 @@
-## Don't just review, suggest!
+## Step 8: Don't just review, suggest!
 
 Now that you have explored the different ways you can review a pull request it is time to learn how to use the _suggest changes_ functionality. This feature, enables you to recommend a change to a pull request that the author can commit with the push of a button!
 

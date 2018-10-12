@@ -12,7 +12,7 @@ For this course, you'll need some background knowledge. If you need a refresher 
 
 Reviewing a pull request is an opportunity to examine another contributor's changes. While reviewing a pull request, you can extrapolate how someone else solved a problem. It's an awesome opportunity to learn more about how the code works and how others solve problems. Reviewing a pull request is a great learning opportunity!
 
-### Assignees
+## Step 1: Add assignees for issues and pull requests
 
 Assignees on issues and pull requests let other team members know who is responsible. The assignee oversees the issue or pull request in an accessible and visible way.
 

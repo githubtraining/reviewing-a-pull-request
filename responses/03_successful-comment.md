@@ -4,8 +4,6 @@ Nice work @{{ user.username }}. By providing feedback, you've enabled me to reev
 
 When you get asked to review something, you should acknowledge the request. Acknowledging a review request could take several forms. It could be leaving a comment on the pull request or leaving a review. In some cases, it could be rejecting the review request altogether.
 
-I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice. In a moment we will look at requesting changes. :+1:
-
 <details><summary>Before you review, some things to consider</summary>
 
 #### Discern the context
@@ -19,6 +17,10 @@ As a reviewer, there are certain things to look for when identifying how to best
 Regardless of timing, focus your feedback on the most essential changes. Suggest changes for minor issues within the pull request. When suggesting major changes, open a separate pull request against the author's branch.
 
 </details>
+
+## Step 3: Leave a review
+
+I've made some changes to this branch and would love :heart: it if you could `approve` this pull request. For now, just approving the pull request will suffice. In a moment we will look at requesting changes. :+1:
 
 ### :keyboard: Activity: Approve a pull request
 
