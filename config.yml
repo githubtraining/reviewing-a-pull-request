@@ -181,37 +181,6 @@ steps:
     actions:
       - type: gate
         left: pull_request.merged
-      - type: respond
-        with: 06-final-flow.md
-
-  - title: Request a reviewer
-    description: Create a new pull request, and request that the Lab Bot reviews it.
-    event: pull_request.opened
-    link: '{{ repoUrl }}/pull/5'
-    actions:
-      - type: createReview
-        body: 07_approve-pr.md
-        event: APPROVE
-      - type: closeIssue
-        issue: The Final Review
-      - type: respond
-        issue: The Final Review
-        with: 07_close-issue.md
-        data:
-          url: '%actions.issue.data.html_url%'
-
-  - title: Merge pull request
-    description: Merge the pull request once I've approved it
-    event: pull_request.closed
-    link: '{{ repoUrl }}/pull/5'
-    actions:
-      - type: gate
-        left: '%payload.pull_request.merged%'
       - type: createIssue
         title: You did it!
         body: 08_final-issue.md
-        action_id: finalIssue
-      - type: respond
-        with: 08_comment-final-pr.md
-        data:
-          url: '%actions.finalIssue.data.html_url%'
