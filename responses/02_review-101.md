@@ -2,7 +2,7 @@
 
 As a collaborator on a repository, you will get and give pull request reviews before merging code. This is important! It ensures quality code and maintains momentum of changes to your project.
 
-As you can see, I've opened this pull request and requested you as a reviewer. Issues are where project contributors _discuss_ a bug or new feature. Pull requests are places to _share_ the changes made to the repository.
+As you can see, I've opened this pull request and requested you as a reviewer. Pull requests are places to _share_ the changes made to the repository.
 
 When an approval or request for changes is not yet needed, consider using **comments**. Comments enable you to inquire about the proposed change early in the review process. You don't need to wait until something is complete to make suggestions.
 
