@@ -1,7 +1,7 @@
 title: Reviewing pull requests
 tagline: Improve your collaboration on GitHub with pull request reviews.
 description: See how collaboration works on GitHub and start building great things, together.
-tags: 
+tags:
   - GitHub
 template:
     name: reviewing-a-pull-request
@@ -13,7 +13,7 @@ before:
     body: 01_intro.md
 steps:
   - title: Assign Yourself
-    description: Assign yourself to the first issue in this repository
+    description: Assign yourself to the first issue in this repository.
     event: issues.assigned
     link: '{{ repoUrl }}/issues/1'
     actions:
@@ -34,7 +34,7 @@ steps:
         issue: Welcome
 
   - title: Comment on a pull request
-    description: Comment on the pull request opened in your repository
+    description: Comment on the pull request opened in your repository.
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/2'
     actions:
@@ -54,7 +54,7 @@ steps:
         with: 03_successful-comment.md
 
   - title: Approve a pull request
-    description: Approve the pull request so that it can be merged
+    description: Approve the pull request so that it can be merged.
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/2'
     actions:
@@ -80,7 +80,7 @@ steps:
           url: '%actions.pr3.data.html_url%'
 
   - title: Requesting changes
-    description: Leave a review that is requesting changes
+    description: Leave a review that is requesting changes.
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/3'
     actions:
@@ -113,7 +113,7 @@ steps:
         with: 05_changes-requested.md
 
   - title: Approve another pull request
-    description: Approve the pull request that has been changed
+    description: Approve the pull request that has been changed.
     event: pull_request_review.submitted
     link: '{{ repoUrl }}/pull/3'
     actions:
@@ -133,7 +133,7 @@ steps:
           url: '%payload.repository.html_url%/compare/update-readme?expand=1'
 
   - title: Open a pull request from readme-update
-    description: Create a pull request to learn about Suggesting Changes
+    description: Create a pull request to learn about Suggesting Changes.
     event: pull_request
     link: '{{ repoUrl }}/compare/readme-update?expand=1'
     actions:
@@ -156,7 +156,7 @@ steps:
         repo: '%payload.repository.name%'
         number: '%payload.pull_request.number%'
         path: README.md
-        body: | 
+        body: |
           ```suggestion
           You can play the game [here](https://%user.username%.github.io/github-games/)
           ```
@@ -169,8 +169,8 @@ steps:
               You can play the game [here](https://%user.username%.github.io/github-games/)
               ```
 
-          To apply my suggestion: 
-            
+          To apply my suggestion:
+
           1. Click **Apply suggestion**
           2. Enter a commit message
           3. Click **Commit changes**
@@ -181,7 +181,7 @@ steps:
         position: 4
 
   - title: Apply the suggestion
-    description: Implement a change from a Suggested Change
+    description: Implement a change from a Suggested Change.
     event: pull_request.synchronize
     link: '{{ repoUrl }}/pulls'
     actions:
@@ -190,7 +190,7 @@ steps:
         body: 08-suggest-merge.md
 
   - title: Merge the pull request
-    description: Merge the pull request after applying the Suggested Change
+    description: Merge the pull request after applying the Suggested Change.
     event: pull_request.closed
     link: '{{ repoUrl }}/pulls'
     actions:
