@@ -91,18 +91,19 @@ steps:
         operator: ===
         right: 'changes_requested'
         else:
-        - type: gate
-          gates:
-            - left: '%payload.review.state'
-              operator: ===
-              right: COMMENT
-            - type: respond
-              with: 05_general-comment.md
-            - left: '%payload.review.state'
-              operator: ===
-              right: APPROVE
-            - type: respond
-              with: 05_approval.md
+          - type: gate
+            left: '%payload.review.state%'
+            operator: ===
+            right: commented
+            else:
+              - type: gate
+                left: '%payload.review.state%'
+                operator: ===
+                right: approved
+              - type: respond
+                with: 05_approval.md
+          - type: respond
+            with: 05_general-comment.md
       - type: mergeBranch
         head: add-multiple-colors
         base: update-colors
