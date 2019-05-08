@@ -4,6 +4,8 @@ I've made a suggested change to this pull request because I think you should lin
 
 It looks like this:
 
+#TODO FIX LINK
+
 ```
 ```suggestion
 You can play the game at: https://{{ user.username }}.github.io/github-games/
