@@ -154,6 +154,11 @@ steps:
           type: respond
           with: fix-body.md
       - type: octokit
+        method: repos.getPages
+        owner: '%payload.repository.owner.login%'
+        repo: '%payload.repository.name%'
+        action_id: pagesUrl
+      - type: octokit
         method: pullRequests.createComment
         owner: '%payload.repository.owner.login%'
         repo: '%payload.repository.name%'
@@ -161,7 +166,7 @@ steps:
         path: README.md
         body: |
           ```suggestion
-          You can play the game [here](https://%user.username%.github.io/github-games/)
+          You can play the game [here]('%actions.pagesUrl.data.html_url%')
           ```
 
           Thanks for opening this pull request, @%user.username%.
@@ -170,7 +175,7 @@ steps:
           It looks like this:
 
               ```suggestion
-              You can play the game [here](https://%user.username%.github.io/github-games/)
+              You can play the game [here]('%actions.pagesUrl.data.html_url%')
               ```
 
           ### :keyboard: Activity: Apply the suggestion
