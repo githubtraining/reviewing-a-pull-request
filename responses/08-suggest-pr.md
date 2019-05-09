@@ -6,8 +6,8 @@ It looks like this:
 
 ```
 ```suggestion
-You can play the game at: {{ pagesUrl }}
+You can play the game at: https://{{ user.username }}.github.io/github-games/
 ```
 ```
 
-For more information about suggested changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
+For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
