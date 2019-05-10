@@ -166,7 +166,7 @@ steps:
         path: README.md
         body: |
           ```suggestion
-          You can play the game [here]('%actions.pagesUrl.data.html_url%')
+          You can play the game on the GitHub Pages site for this repository.
           ```
 
           Thanks for opening this pull request, @%user.username%.
@@ -175,7 +175,7 @@ steps:
           It looks like this:
 
               ```suggestion
-              You can play the game [here]('%actions.pagesUrl.data.html_url%')
+              You can play the game on the GitHub Pages site for this repository.
               ```
 
           ### :keyboard: Activity: Apply the suggestion
