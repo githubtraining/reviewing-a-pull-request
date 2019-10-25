@@ -4,11 +4,9 @@ I've made a suggested change to this pull request because I think you should lin
 
 It looks like this:
 
-```
-```suggestion
-You can play the game at: {{ pagesUrl }}
-```
-```
+    ```suggestion
+    You can play the game at: {{ pagesUrl }}
+    ```
 
 ### :keyboard: Activity: Apply the suggestion
 

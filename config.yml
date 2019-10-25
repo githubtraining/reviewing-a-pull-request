@@ -148,6 +148,9 @@ steps:
         file: README.md
         body: 08-suggest-pr.md
         position: 5
+        data:
+          # !! We don't ask the learner to turn on pages, so this is just a guess and won't translate to GHES
+          pagesUrl: https://%user.username%.github.io/github-games/
 
   - title: Apply the suggestion
     description: Implement a change from a suggested change.
