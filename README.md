@@ -1,13 +1,25 @@
-This course will dive into how you can get your best work done by identifying when and how to request a review, how to perform a review for someone else's pull request, and other awesome collaboration methods.
+<p align="center"><a href="https://lab.github.com/"><img alt="Learning Lab bot" src="https://user-images.githubusercontent.com/16547949/62085817-83232580-b22a-11e9-8693-7c54205b04e5.png"></a></p>
 
-All great projects start with collaboration. Pull requests are the foundation of teamwork on GitHub—and pull request reviews give you the ability to work together and discuss changes specific to a pull request by commenting, requesting changes, or approving.
+<h1 align="center">Course: Reviewing pull requests </h1>
 
-In this course, you’ll learn how to:
+This repository powers the Learning Lab course [_Reviewing pull requests_](https://lab.github.com/githubtraining/reviewing-pull-requests). 
 
-- Comment on pull requests
-- Leave reviews on pull requests
-- See what’s expected when reviewing pull requests
-- Request pull request reviews
-- Accept changes introduced by a pull request review
+Every Learning Lab course is made up of:
+- a [course repository](https://github.com/githubtraining/reviewing-a-pull-request), and
+- a [template repository](https://github.com/githubtraining/reviewing-a-pull-request-template)
 
-This course has a dedicated message board on the [GitHub Community Forum]({{ communityBoard }}). Create a post to start a conversation, discuss this course with GitHub Trainers and participants, or troubleshoot any issues you encounter. 
+The course repository is written in YAML and Markdown. The template repository could be written in any language that supports the learning objectives.
+
+For more information on the goals of this course, check out the [`course-details.md`](course-details.md). 
+
+## Contribute
+
+See something we could improve? Check out the contributing guide in the [community contributors repository](https://github.com/githubtraining/community-contributors/blob/master/CONTRIBUTING.md) for more information on the types of contributions we :heart: and instructions.
+
+We :heart: our community and take great care to ensure it is fun, safe and rewarding. Please review our [Code of Conduct](https://github.com/githubtraining/community-contributors/blob/master/CODE_OF_CONDUCT.md) for community expectations and guidelines for reporting concerns.
+
+## License
+
+All Learning Lab course repositories are licensed under [CC-BY-4.0](../LICENSE) (c) 2019 GitHub, Inc. The template repositories associated with each course may have different licenses.
+
+When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos)

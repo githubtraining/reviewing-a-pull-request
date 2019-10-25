@@ -4,8 +4,8 @@ description: See how collaboration works on GitHub and start building great thin
 tags:
   - GitHub
 template:
-    name: reviewing-a-pull-request
-    repo: reviewing-a-pull-request-template
+  name: reviewing-a-pull-request
+  repo: reviewing-a-pull-request-template
 before:
   - type: updateBranchProtection
   - type: createIssue
@@ -15,38 +15,38 @@ steps:
   - title: Assign Yourself
     description: Assign yourself to the first issue in this repository.
     event: issues.assigned
-    link: '{{ repoUrl }}/issues/1'
+    link: "{{ repoUrl }}/issues/1"
     actions:
       - type: gate
-        left: '%payload.assignee.login%'
+        left: "%payload.assignee.login%"
         operator: ===
-        right: '%user.username%'
+        right: "%user.username%"
       - type: createPullRequest
         title: Update Game Instructions
         body: 02_review-101.md
         head: game-instructions
         action_id: pr2
       - type: requestReviewFromRegistrant
-        pullRequest: '%actions.pr2.data.number%'
+        pullRequest: "%actions.pr2.data.number%"
       - type: respond
         with: 02_close-first-issue.md
         data:
-          url: '%actions.pr2.data.html_url%'
+          url: "%actions.pr2.data.html_url%"
       - type: closeIssue
         issue: Welcome
 
   - title: Comment on a pull request
     description: Comment on the pull request opened in your repository.
     event: pull_request_review.submitted
-    link: '{{ repoUrl }}/pull/2'
+    link: "{{ repoUrl }}/pull/2"
     actions:
       - type: gate
         every: true
         gates:
-          - left: '%payload.review.state%'
+          - left: "%payload.review.state%"
             operator: ===
-            right: 'commented'
-          - left: '%payload.pull_request.title%'
+            right: "commented"
+          - left: "%payload.pull_request.title%"
             operator: ===
             right: Update Game Instructions
         else:
@@ -58,12 +58,12 @@ steps:
   - title: Approve a pull request
     description: Approve the pull request so that it can be merged.
     event: pull_request_review.submitted
-    link: '{{ repoUrl }}/pull/2'
+    link: "{{ repoUrl }}/pull/2"
     actions:
       - type: gate
-        left: '%payload.review.state%'
+        left: "%payload.review.state%"
         operator: ===
-        right: 'approved'
+        right: "approved"
       - type: mergeBranch
         head: game-instructions
       - type: deleteBranch
@@ -76,25 +76,25 @@ steps:
       - type: respond
         with: 04_merging-pull-request.md
         data:
-          url: '%actions.pr3.data.html_url%'
+          url: "%actions.pr3.data.html_url%"
 
   - title: Requesting changes
     description: Leave a review that is requesting changes.
     event: pull_request_review.submitted
-    link: '{{ repoUrl }}/pull/3'
+    link: "{{ repoUrl }}/pull/3"
     actions:
       - type: gate
-        left: '%payload.review.state%'
+        left: "%payload.review.state%"
         operator: ===
-        right: 'changes_requested'
+        right: "changes_requested"
         else:
           - type: gate
-            left: '%payload.review.state%'
+            left: "%payload.review.state%"
             operator: ===
             right: commented
             else:
               - type: gate
-                left: '%payload.review.state%'
+                left: "%payload.review.state%"
                 operator: ===
                 right: approved
               - type: respond
@@ -112,24 +112,24 @@ steps:
   - title: Practice reviews
     description: Approve the pull request that has been changed.
     event: pull_request_review.submitted
-    link: '{{ repoUrl }}/pull/3'
+    link: "{{ repoUrl }}/pull/3"
     actions:
       - type: gate
-        left: '%payload.review.state%'
+        left: "%payload.review.state%"
         operator: ===
-        right: 'approved'
+        right: "approved"
       - type: mergePullRequest
       - type: deleteBranch
         branch: update-colors
       - type: respond
         with: 08-suggest.md
         data:
-          url: '%payload.repository.html_url%/compare/update-readme?expand=1'
+          url: "%payload.repository.html_url%/compare/update-readme?expand=1"
 
   - title: Open a pull request from readme-update
     description: Create a pull request to learn about suggesting changes.
     event: pull_request
-    link: '{{ repoUrl }}/compare/readme-update?expand=1'
+    link: "{{ repoUrl }}/compare/readme-update?expand=1"
     actions:
       - type: gate
         gates:
@@ -140,7 +140,7 @@ steps:
             operator: "==="
             right: "edited"
       - type: gate
-        left: '%payload.pull_request.body%'
+        left: "%payload.pull_request.body%"
         else:
           type: respond
           with: fix-body.md
@@ -152,7 +152,7 @@ steps:
   - title: Apply the suggestion
     description: Implement a change from a suggested change.
     event: pull_request.synchronize
-    link: '{{ repoUrl }}/pulls'
+    link: "{{ repoUrl }}/pulls"
     actions:
       - type: createReview
         event: APPROVE
@@ -161,10 +161,10 @@ steps:
   - title: Merge the pull request
     description: Merge the pull request after applying the suggested change.
     event: pull_request.closed
-    link: '{{ repoUrl }}/pulls'
+    link: "{{ repoUrl }}/pulls"
     actions:
       - type: gate
-        left: '%payload.pull_request.merged%'
+        left: "%payload.pull_request.merged%"
         else:
           - type: respond
             with: 08_accidental-close.md
