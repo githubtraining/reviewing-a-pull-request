@@ -66,11 +66,8 @@ steps:
         right: "approved"
       - type: mergeBranch
         head: game-instructions
-      - type: octokit
-        method: gitdata.deleteReference
-        owner: "%payload.repository.owner.login%"
-        repo: "%payload.repository.name%"
-        ref: heads/game-instructions
+      - type: deleteBranch
+        branch: game-instructions
       - type: createPullRequest
         title: Change Tetris Colors
         body: 04_requesting-changes.md
@@ -107,11 +104,8 @@ steps:
       - type: mergeBranch
         head: add-multiple-colors
         base: update-colors
-      - type: octokit
-        method: gitdata.deleteReference
-        owner: "%payload.repository.owner.login%"
-        repo: "%payload.repository.name%"
-        ref: heads/add-multiple-colors
+      - type: deleteBranch
+        branch: add-multiple-colors
       - type: respond
         with: 05_changes-requested.md
 
@@ -125,11 +119,8 @@ steps:
         operator: ===
         right: "approved"
       - type: mergePullRequest
-      - type: octokit
-        method: gitdata.deleteReference
-        owner: "%payload.repository.owner.login%"
-        repo: "%payload.repository.name%"
-        ref: heads/update-colors
+      - type: deleteBranch
+        branch: update-colors
       - type: respond
         with: 08-suggest.md
         data:
@@ -153,36 +144,13 @@ steps:
         else:
           type: respond
           with: fix-body.md
-      - type: octokit
-        method: pullRequests.createComment
-        owner: "%payload.repository.owner.login%"
-        repo: "%payload.repository.name%"
-        number: "%payload.pull_request.number%"
-        path: README.md
-        body: |
-          ```suggestion
-          You can play the game on the GitHub Pages site for this repository.
-          ```
-
-          Thanks for opening this pull request, @%user.username%.
-
-          I've made a suggested change to this pull request because I think you should link your version of the game in your README file. I made this suggestion by creating a review comment that uses some :sparkle: special :sparkle: formatting.
-          It looks like this:
-
-              ```suggestion
-              You can play the game on the GitHub Pages site for this repository.
-              ```
-
-          ### :keyboard: Activity: Apply the suggestion
-
-          1. Click **Apply suggestion**
-          2. Enter a commit message
-          3. Click **Commit changes**
-
-          For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
-
-        commit_id: "%payload.pull_request.head.sha%"
+      - type: createPullRequestComment
+        file: README.md
+        body: 08-suggest-pr.md
         position: 5
+        data:
+          # !! We don't ask the learner to turn on pages, so this is just a guess and won't translate to GHES
+          pagesUrl: https://%user.username%.github.io/github-games/
 
   - title: Apply the suggestion
     description: Implement a change from a suggested change.
