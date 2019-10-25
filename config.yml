@@ -146,7 +146,7 @@ steps:
           with: fix-body.md
       - type: createPullRequestComment
         file: README.md
-        body: 07_pr-comment.md
+        body: 08-suggest-pr.md
         position: 5
 
   - title: Apply the suggestion

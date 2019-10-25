@@ -10,4 +10,10 @@ You can play the game at: {{ pagesUrl }}
 ```
 ```
 
+### :keyboard: Activity: Apply the suggestion
+
+1. Click **Apply suggestion**
+2. Enter a commit message
+3. Click **Commit changes**
+
 For more information about suggested changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
