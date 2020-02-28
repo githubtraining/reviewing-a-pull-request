@@ -23,8 +23,16 @@ And when you're done you'll be able to:
 - Accept changes introduced by a pull request review
 
 
+## What you'll build
+We'll be building a tetris game!
+
+![tetris](https://user-images.githubusercontent.com/57373296/75575281-e332b200-5a2d-11ea-94da-8ce317ab1206.gif)
+
 ## Prerequisites
 None. This course is a great introduction to using pull requests.
+
+## Projects used
+- This course uses a javascript [tetris game](https://github.com/jakesgordon/javascript-tetris)
 
 ## Audience
 
