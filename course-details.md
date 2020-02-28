@@ -28,4 +28,4 @@ None. This course is a great introduction to using pull requests.
 
 ## Audience
 
-New developers, new GitHub users, users new to Git, students, managers, teams
+Developers, new GitHub users, users new to Git, students, managers, teams
