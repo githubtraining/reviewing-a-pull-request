@@ -26,7 +26,9 @@ And when you're done you'll be able to:
 ## What you'll build
 We'll be building a tetris game!
 
-![tetris](https://user-images.githubusercontent.com/57373296/75575281-e332b200-5a2d-11ea-94da-8ce317ab1206.gif)
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/57373296/75575281-e332b200-5a2d-11ea-94da-8ce317ab1206.gif" width="350" height="350">
+</p>
 
 ## Prerequisites
 None. This course is a great introduction to using pull requests.
