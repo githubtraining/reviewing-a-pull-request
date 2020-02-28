@@ -6,10 +6,13 @@ All great projects start with collaboration. Pull requests are the foundation of
 
 We'll answer common questions like:
 - What is a pull request?
-- How do you comment on a pull request?
-- How do you review a pull request?
-- How do you request a pull request review?
-- How do you accept changes introduced by a pull request review?
+- How do I request, review, or comment on a pull request?
+- How do I accept changes introduced by a pull request review?
+- What are the responsibilities of a reviewer?
+- What's a CODEOWNERS file?
+- What's a diff and how do I use it?
+- How do I implement changes from a pull request review?
+- How can I suggest a change when reviewing a pull request?
 
 And when you're done you'll be able to:
 - Create a pull request
