@@ -2,7 +2,7 @@
 
 Hello and welcome! In this course you will learn how you can get your best work done in pull requests.  You'll learn when and how to request a review, how to review someone else's code, and how to respond to reviews. To do this, we'll be playing around with the code in this repository that makes a simple Tetris game.
 
-If you'd like, you can use [GitHub Pages](https://pages.github.com/) to host your Tetris game. Just go to the **Settings** tab of this repository. Scroll down to **GitHub Pages** and select `master` as a **Source**. 
+If you'd like, you can use [GitHub Pages](https://pages.github.com/) to host your Tetris game. Just go to the **Settings** tab of this repository. Scroll down to **GitHub Pages** and select `main` as a **Source**. 
 
 ### New to GitHub?
 
