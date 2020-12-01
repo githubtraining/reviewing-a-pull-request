@@ -6,7 +6,7 @@ If you'd like, you can use [GitHub Pages](https://pages.github.com/) to host you
 
 ### New to GitHub?
 
-For this course, you'll need some background knowledge. If you need a refresher on the GitHub flow, check out [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
+For this course, you'll need some background knowledge. If you need a refresher on the GitHub flow, check out [the Introduction to GitHub course]({{ host }}/{{ course.Owner.login }}/introduction-to-github).
 
 ## Pull Requests Reviews 101
 
